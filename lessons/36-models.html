@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="google-site-verification" content=""/>
+  <meta name="naver-site-verification" content=""/>
+
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:author" content="appkr (juwonkim@me.com)"/>
+  <meta property="og:image" content=""/>
+
+  <!-- Google+ Meta -->
+  <meta itemprop="name" content="라라벨 5 입문 및 실전">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="">
+  <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@appkrs"/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:image" content=""/>
+  <meta name="twitter:domain" content="example.com">
+
+  <!-- Mobile and Rss -->
+  <link rel="canonical" href="http://l5.appkr.kr/"/>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <title>라라벨 5 입문 및 실전</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="#app">
+  <nav class="navbar navbar-fixed-top role="navigation">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">
+        <i class="material-icons">school</i>
+        라라벨 5 입문 및 실전
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <aside id="sidebar" class="col-md-3">
+        <ul>
+                      <li  index="0" current-index="37">
+              <a href="/lessons/01-welcome.html">1강 - 처음 만나는 라라벨</a>
+            </li>
+                      <li  index="1" current-index="37">
+              <a href="/lessons/02-hello-laravel.html">2강 - 라라벨 5 설치하기</a>
+            </li>
+                      <li  index="2" current-index="37">
+              <a href="/lessons/02-install-on-windows.html">2강 - 라라벨 5 설치하기 (on Windows)</a>
+            </li>
+                      <li  index="3" current-index="37">
+              <a href="/lessons/03-configuration.html">3강 - 글로벌 설정 살펴보기</a>
+            </li>
+                      <li  index="4" current-index="37">
+              <a href="/lessons/04-routing-basics.html">4강 - Routing 기본기</a>
+            </li>
+                      <li  index="5" current-index="37">
+              <a href="/lessons/05-pass-data-to-view.html">5강 - 뷰에 데이터 바인딩하기</a>
+            </li>
+                      <li  index="6" current-index="37">
+              <a href="/lessons/06-blade-101.html">6강 - 블레이드 101</a>
+            </li>
+                      <li  index="7" current-index="37">
+              <a href="/lessons/07-blade-201.html">7강 - 블레이드 201</a>
+            </li>
+                      <li  index="8" current-index="37">
+              <a href="/lessons/08-raw-queries.html">8강 - 날 쿼리 :(</a>
+            </li>
+                      <li  index="9" current-index="37">
+              <a href="/lessons/09-query-builder.html">9강 - 쿼리 빌더</a>
+            </li>
+                      <li  index="10" current-index="37">
+              <a href="/lessons/10-eloquent.html">10강 - 엘로퀀트 ORM</a>
+            </li>
+                      <li  index="11" current-index="37">
+              <a href="/lessons/11-migration.html">11강 - DB 마이그레이션</a>
+            </li>
+                      <li  index="12" current-index="37">
+              <a href="/lessons/12-controller.html">12강 - 컨트롤러</a>
+            </li>
+                      <li  index="13" current-index="37">
+              <a href="/lessons/13-restful-resource-controller.html">13강 - RESTful 리소스 컨트롤러</a>
+            </li>
+                      <li  index="14" current-index="37">
+              <a href="/lessons/14-named-routes.html">14강 - 이름 있는 Route</a>
+            </li>
+                      <li  index="15" current-index="37">
+              <a href="/lessons/15-nested-resources.html">15강 - 중첩된 리소스</a>
+            </li>
+                      <li  index="16" current-index="37">
+              <a href="/lessons/16-authentication.html">16강 - 사용자 인증 기본기</a>
+            </li>
+                      <li  index="17" current-index="37">
+              <a href="/lessons/17-authentication-201.html">17강 - 라라벨에 내장된 사용자 인증</a>
+            </li>
+                      <li  index="18" current-index="37">
+              <a href="/lessons/18-eloquent-relationships.html">18강 - 모델간 관계 맺기</a>
+            </li>
+                      <li  index="19" current-index="37">
+              <a href="/lessons/19-seeder.html">19강 - 데이터 심기</a>
+            </li>
+                      <li  index="20" current-index="37">
+              <a href="/lessons/20-eager-loading.html">20강 - Eager 로딩</a>
+            </li>
+                      <li  index="21" current-index="37">
+              <a href="/lessons/20-1-pagination.html">추가 - 페이징</a>
+            </li>
+                      <li  index="22" current-index="37">
+              <a href="/lessons/21-mail.html">21강 - 메일 보내기</a>
+            </li>
+                      <li  index="23" current-index="37">
+              <a href="/lessons/22-events.html">22강 - 이벤트</a>
+            </li>
+                      <li  index="24" current-index="37">
+              <a href="/lessons/23-validation.html">23강 - 입력 값 유효성 검사</a>
+            </li>
+                      <li  index="25" current-index="37">
+              <a href="/lessons/24-exception-handling.html">24강 - 예외 처리</a>
+            </li>
+                      <li  index="26" current-index="37">
+              <a href="/lessons/25-composer.html">25강 - 컴포저</a>
+            </li>
+                      <li  index="27" current-index="37">
+              <a href="/lessons/26-document-model.html">26강 - Document 모델</a>
+            </li>
+                      <li  index="28" current-index="37">
+              <a href="/lessons/27-document-controller.html">27강 - Document 컨트롤러</a>
+            </li>
+                      <li  index="29" current-index="37">
+              <a href="/lessons/28-cache.html">28강 - Cache</a>
+            </li>
+                      <li  index="30" current-index="37">
+              <a href="/lessons/29-elixir.html">29강 - Elixir, 만병통치약?</a>
+            </li>
+                      <li  index="31" current-index="37">
+              <a href="/lessons/30-final-touch.html">30강 - Debug &amp; Final Touch</a>
+            </li>
+                      <li  index="32" current-index="37">
+              <a href="/lessons/31-forum-features.html">31강 - 포럼 요구사항 기획</a>
+            </li>
+                      <li  index="33" current-index="37">
+              <a href="/lessons/32-login.html">32강 - 사용자 로그인</a>
+            </li>
+                      <li  index="34" current-index="37">
+              <a href="/lessons/33-social-login.html">33강 - 소셜 로그인</a>
+            </li>
+                      <li  index="35" current-index="37">
+              <a href="/lessons/34-role.html">34강 - 사용자 역할</a>
+            </li>
+                      <li  index="36" current-index="37">
+              <a href="/lessons/35-locale.html">35강 - 다국어 지원</a>
+            </li>
+                      <li class="active" index="37" current-index="37">
+              <a href="/lessons/36-models.html">36강 - 마이그레이션과 모델</a>
+            </li>
+                      <li  index="38" current-index="37">
+              <a href="/lessons/37-articles.html">37강 - Article 기능 구현</a>
+            </li>
+                      <li  index="39" current-index="37">
+              <a href="/lessons/38-tags.html">38강 - Tag 기능 구현</a>
+            </li>
+                      <li  index="40" current-index="37">
+              <a href="/lessons/39-attachments.html">39강 - Attachment 기능 구현</a>
+            </li>
+                      <li  index="41" current-index="37">
+              <a href="/lessons/32n33-auth-refactoring.html">32/33 보충 - 인증 리팩토링</a>
+            </li>
+                      <li  index="42" current-index="37">
+              <a href="/lessons/40-comments.html">40강 - Comment 기능 구현</a>
+            </li>
+                      <li  index="43" current-index="37">
+              <a href="/lessons/41-ui-makeup.html">41강 - UI 개선</a>
+            </li>
+                      <li  index="44" current-index="37">
+              <a href="/lessons/42-be-makeup.html">42강 - 서버 사이드 개선</a>
+            </li>
+                      <li  index="45" current-index="37">
+              <a href="/lessons/43-change-note.html">43강 - 변경 사항 알림</a>
+            </li>
+                      <li  index="46" current-index="37">
+              <a href="/lessons/44-api-basic.html">44강 - API 기본기 및 기획</a>
+            </li>
+                      <li  index="47" current-index="37">
+              <a href="/lessons/45-api-big-picture.html">45강 - 기본 구조 잡기</a>
+            </li>
+                      <li  index="48" current-index="37">
+              <a href="/lessons/46-jwt.html">46강 - JWT 를 이용한 인증</a>
+            </li>
+                      <li  index="49" current-index="37">
+              <a href="/lessons/47-dry-refactoring.html">47강 - 중복 제거 리팩토링</a>
+            </li>
+                      <li  index="50" current-index="37">
+              <a href="/lessons/48-all-is-bad.html">48강 - all() is bad</a>
+            </li>
+                      <li  index="51" current-index="37">
+              <a href="/lessons/49-rate-limit.html">49강 - API Rate Limit</a>
+            </li>
+                      <li  index="52" current-index="37">
+              <a href="/lessons/50-id-obfuscation.html">50강 - 리소스 id 난독화</a>
+            </li>
+                      <li  index="53" current-index="37">
+              <a href="/lessons/51-cors.html">51강 - CORS</a>
+            </li>
+                      <li  index="54" current-index="37">
+              <a href="/lessons/52-caching.html">52강 - Caching</a>
+            </li>
+                      <li  index="55" current-index="37">
+              <a href="/lessons/53-partial-response.html">53강 - Partial Response</a>
+            </li>
+                      <li  index="56" current-index="37">
+              <a href="/lessons/54-api-docs.html">54강 - API Documents</a>
+            </li>
+                      <li  index="57" current-index="37">
+              <a href="/lessons/02-install-homestead-osx.html">Homestead 설치 (on Mac)</a>
+            </li>
+                      <li  index="58" current-index="37">
+              <a href="/lessons/02-install-homestead-windows.html">Homestead 설치 (on Windows)</a>
+            </li>
+                      <li  index="59" current-index="37">
+              <a href="/lessons/999-code-release.html">코드 배포</a>
+            </li>
+                  </ul>
+      </aside>
+
+      <article id="article" class="col-md-9">
+                  <nav id="pagination">
+  <ul class="pager pager-top">
+    <li class="previous ">
+      <a href="/lessons/35-locale.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          35강 - 다국어 지원
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/37-articles.html">
+        <span class="pager-title">
+          37강 - Article 기능...
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr/>
+
+          <h1>실전 프로젝트 2 - Forum</h1>
+<h2>36강 - 마이그레이션과 모델</h2>
+<p>이번 강좌에서는 포럼에서 사용할 테이블들을 생성하기 위한 마이그레이션을 만들고, 각 테이블에 대응되는 엘로퀀트 모델을 만들것이다. 이번 강좌를 통해 One to Many, Many to Many, Polymorphic Many to Many 등 모델간 관계를 배울 것이다.</p>
+<h3>테이블 설계</h3>
+<p><a href="31-forum-features.md">31강 - 포럼 개발 기획</a>을 참고해서 articles, comments, tags, attachments 총 4개의 메인 테이블과 article_tag 란 피봇 테이블로 설계해 보았다. </p>
+<p><img src="./images/36-models-img-01.png" alt="" /></p>
+<ul>
+<li>Article 모델
+<ul>
+<li>Article 인스턴스는 1명의 User가 작성한 것이다. (외래키 'author_id')</li>
+<li>하나의 Article에 대해 여러 개의 Comment가 달릴 수 있다.</li>
+<li>하나의 Comment를 Best Answer로 선택할 수 있다. (외래키 'solution_id')</li>
+<li>하나의 Article에 여러 개의 Tag를 붙일 수 있다.</li>
+<li>하나의 Article에 여러 개의 첨부파일을 붙일 수 있다.</li>
+<li>Article 인스턴스에 'notification' 필드값이 셋팅되어 있는 상태에서, Comment가 등록되면 'author_id'를 가진 User에게 이메일을 보낼 것이다.</li>
+</ul></li>
+<li>Comment 모델
+<ul>
+<li>Comment 인스턴스는 특정 User가 작성한 것이다. (외래키 'commentable_id')</li>
+<li>Comment의 Comment, 즉 대댓글 기능을 위해, 하나의 Comment는 부모 Comment를 가질 수 있다. 즉, Comment 내부에서 재귀적인 관계가 형성된다.</li>
+<li>Comment는 Article 모델과 관계를 가질 수도 있지만, 다른 모델과 다형적인 관계를 가질 수도 있다. (Polymorphic Many to Many라 한다. 'commentable_type', 'commentable_id'로 필드명을 정했다.)</li>
+</ul></li>
+<li>Tag 모델
+<ul>
+<li>하나의 Tag 가 여러 개의 Article과 연결되어 있다.</li>
+</ul></li>
+<li>Attachment 모델
+<ul>
+<li>Attachment 인스턴스는 하나의 Article에 소속된다.</li>
+</ul></li>
+</ul>
+<p>가령, 우리 프로젝트에 Post, Application과 같은 모델이 더 있고, 모든 모델들은 모두 댓글 기능이 있다고 가정해 보자. 이 때, ArticleComment, PostComment, ApplicationComment로 총 3개의 모델을 만들고 각각 관계를 연결하는 것이 아니라, <a href="http://laravel.com/docs/eloquent-relationships#many-to-many-polymorphic-relations"><strong>Polymorphic Many to Many</strong></a> 관계를 이용할 수 있다. Comment 모델 하나로, Article의 Comment로도, Post의 Comment로도 쓸 수 있는 것이다. </p>
+<p>Article과 Tag는 Many to Many 관계를 가지고, 이를 위해 article_tag란 피봇테이블을 도입했다. Role과 User간의 Many to Many 관계 연결을 위한 role_user 피봇테이블은 <a href="34-role.md">34강 - 사용자 역할</a>을 진행하는 과정에서 'bican/role' 패키지를 설치하는 과정에 생성된 것이다.</p>
+<h3>마이그레이션 작성</h3>
+<p>artisan CLI를 이용한다. <code>--migration</code> 옵션을 주면, 모델을 만들 때 마이그레이션도 같이 생성해 준다. article_tag 테이블을 만들 때는 <code>--create=테이블이름</code> 옵션을 이용했는데, 이 옵션을 주면 마이그레이션 작성시 타이핑을 좀 줄일 수 있다 (차이는 직접 경험해 보자). </p>
+<pre><code class="language-bash">$ php artisan make:model Comment --migration
+$ php artisan make:model Article --migration
+$ php artisan make:model Tag --migration
+$ php artisan make:model Attachment --migration
+$ php artisan make:migration create_article_tag_table --create="article_tag"</code></pre>
+<p>마이그레이션을 만들 때 주의할 점이 있다. 마이그레이션 파일들은 파일명에 타임스탬프를 담고 있고, 생성 순서에 따라 순차적으로 실행된다. 우리 프로젝트에서는 create_articles_table 마이그레이션에서 comments 테이블과 'solution_id'를 이용해서 외래키 관계를 설정하고 있다. comments 테이블이 먼저 생성되어 있어야 articles 테이블에서 comment_id 외래키로 테이블간 연결할 수 있다. 즉, 마이그레이션은 순서가 중요하다.</p>
+<p>혹, 순서가 잘못되어 마이그레이션 실행시 오류가 발생했다면... 이번 마이그레이션 실행으로 인해, 생성된 테이블이나, migrations 테이블에 추가된 엔트리가 있다면 삭제한다. 수동으로 파일명의 타임스탬프를 조작해 주어 실행 순서를 변경시킨 후, 마이그레이션을 다시 실행할 수 있다.  </p>
+<p><code>down()</code> 메소드에 해당하는 리버스 마이그레이션은 아래에서 생략하였다.</p>
+<pre><code class="language-php">// database/migrations/create_comments_table
+class CreateCommentsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('comments', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;integer('author_id')-&gt;unsigned()-&gt;index();
+            $table-&gt;string('commentable_type');
+            $table-&gt;integer('commentable_id')-&gt;unsigned();
+            $table-&gt;integer('parent_id')-&gt;unsigned();
+            $table-&gt;string('title');
+            $table-&gt;text('content');
+            $table-&gt;timestamps();
+
+            $table-&gt;foreign('author_id')-&gt;references('id')-&gt;on('users')-&gt;onDelete('cascade');
+            $table-&gt;foreign('parent_id')-&gt;references('id')-&gt;on('comments')-&gt;onDelete('cascade');
+        });
+    }
+}</code></pre>
+<pre><code class="language-php">// database/migrations/create_articles_table
+class CreateArticlesTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('articles', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;integer('author_id')-&gt;unsigned()-&gt;index();
+            $table-&gt;string('title');
+            $table-&gt;text('content');
+            $table-&gt;integer('solution_id')-&gt;unsigned()-&gt;nullable();
+            $table-&gt;boolean('notification')-&gt;default(1);
+            $table-&gt;timestamps();
+
+            $table-&gt;foreign('author_id')-&gt;references('id')-&gt;on('users')-&gt;onDelete('cascade');
+            $table-&gt;foreign('solution_id')-&gt;references('id')-&gt;on('comments');
+        });
+    }
+}</code></pre>
+<pre><code class="language-php">// database/migrations/create_tags_table
+class CreateTagsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('tags', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;string('name');
+            $table-&gt;string('slug')-&gt;index();
+            $table-&gt;timestamps();
+        });
+    }
+}</code></pre>
+<pre><code class="language-php">// database/migrations/create_attachments_table
+class CreateAttachmentsTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('attachments', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;string('name');
+            $table-&gt;integer('article_id')-&gt;unsigned()-&gt;index();
+            $table-&gt;timestamps();
+        });
+    }
+}</code></pre>
+<pre><code class="language-php">// database/migrations/create_article_tag_table
+class CreateArticleTagTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('article_tag', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;integer('article_id')-&gt;unsigned();
+            $table-&gt;integer('tag_id')-&gt;unsigned();
+            $table-&gt;timestamps();
+
+            $table-&gt;foreign('article_id')-&gt;references('id')-&gt;on('articles')-&gt;onDelete('cascade');
+            $table-&gt;foreign('tag_id')-&gt;references('id')-&gt;on('tags')-&gt;onDelete('cascade');
+        });
+    }
+}</code></pre>
+<p>마이그레이션을 실행하자.</p>
+<pre><code class="language-bash">$ php artisan migrate</code></pre>
+<h3>모델 작성</h3>
+<p>테이블 설계에서 정리한 내용을 기반으로 모델간의 관계를 설정하고, <code>$fillable</code>, <code>$hidden</code> 필드를 설정하자.</p>
+<pre><code class="language-php">// app/User.php
+
+class User extends Model implements ...
+{
+    ...
+
+    /* Relationships */
+
+    public function articles()
+    {
+        return $this-&gt;hasMany(Article::class, 'author_id');
+    }
+
+    public function comments()
+    {
+        return $this-&gt;hasMany(Comment::class, 'author_id');
+    }
+}</code></pre>
+<pre><code class="language-php">// app/Comment.php
+
+class Comment extends Model
+{
+    protected $fillable = [
+        'commentable_type',
+        'commentable_id',
+        'author_id',
+        'parent_id',
+        'title',
+        'content'
+    ];
+
+    protected $hidden = [
+        'author_id',
+        'commentable_type',
+        'commentable_id',
+        'parent_id'
+    ];
+
+    /* Relationships */
+
+    public function author()
+    {
+        return $this-&gt;belongsTo(User::class, 'author_id');
+    }
+
+    public function commentable()
+    {
+        return $this-&gt;morphTo();
+    }
+
+    public function replies()
+    {
+        return $this-&gt;hasMany(Comment::class, 'parent_id');
+    }
+
+    public function parent()
+    {
+        return $this-&gt;belongsTo(Comment::class, 'id', 'parent_id');
+    }
+}</code></pre>
+<pre><code class="language-php">// app/Article.php
+
+class Article extends Model
+{
+    protected $fillable = [
+        'author_id',
+        'title',
+        'content',
+        'notification'
+    ];
+
+    protected $hidden = [
+        'author_id',
+        'solution_id',
+        'notification'
+    ];
+
+    /* Relationships */
+
+    public function author()
+    {
+        return $this-&gt;belongsTo(User::class, 'author_id');
+    }
+
+    public function tags()
+    {
+        return $this-&gt;belongsToMany(Tag::class);
+    }
+
+    public function comments()
+    {
+        return $this-&gt;morphMany(Comment::class, 'commentable');
+    }
+
+    public function solution()
+    {
+        return $this-&gt;hasOne(Comment::class, 'id', 'solution_id');
+    }
+
+    public function attachments()
+    {
+        return $this-&gt;hasMany(Attachment::class);
+    }
+}</code></pre>
+<pre><code class="language-php">// app/Tag.php
+
+class Tag extends Model
+{
+    protected $fillable = [
+        'name',
+        'slug'
+    ];
+
+    /* Relationships */
+
+    public function articles()
+    {
+        return $this-&gt;belongsToMany(Article::class);
+    }
+}</code></pre>
+<pre><code class="language-php">// app/Attachment.php
+
+class Attachment extends Model
+{
+    protected $fillable = [
+        'name'
+    ];
+
+    protected $hidden = [
+        'article_id'
+    ];
+
+    /* Relationships */
+
+    public function article()
+    {
+        return $this-&gt;belongsTo(Article::class);
+    }
+}</code></pre>
+<h3>모델 팩토리 작성</h3>
+<p>Tag 팩토리의 <code>$faker-&gt;optional(0.9, 'Laravel')-&gt;word</code> 문법은 <a href="https://github.com/fzaninotto/Faker#unique-and-optional-modifiers">fzaninotto/faker API</a>, Attachment 팩토리의 <code>$faker-&gt;randomElement(['png', 'jpg'])</code> 문법은 <a href="https://github.com/fzaninotto/Faker#formatters">fzaninotto/faker API</a>를 참고하자.</p>
+<pre><code class="language-php">$factory-&gt;define(App\User::class, function (Faker\Generator $faker) {
+    return [
+        'name'           =&gt; $faker-&gt;name,
+        'email'          =&gt; $faker-&gt;email,
+        'password'       =&gt; bcrypt(str_random(10)),
+        'remember_token' =&gt; str_random(10),
+    ];
+});
+
+$factory-&gt;define(App\Article::class, function (Faker\Generator $faker) {
+    return [
+        'title'   =&gt; $faker-&gt;sentence(),
+        'content' =&gt; $faker-&gt;paragraph(),
+    ];
+});
+
+$factory-&gt;define(App\Comment::class, function (Faker\Generator $faker) {
+    return [
+        'title'   =&gt; $faker-&gt;sentence,
+        'content' =&gt; $faker-&gt;paragraph,
+    ];
+});
+
+$factory-&gt;define(App\Tag::class, function (Faker\Generator $faker) {
+    $name = ucfirst($faker-&gt;optional(0.9, 'Laravel')-&gt;word);
+
+    return [
+        'name' =&gt; $name,
+        'slug' =&gt; str_slug($name),
+    ];
+});
+
+$factory-&gt;define(App\Attachment::class, function (Faker\Generator $faker) {
+    return [
+        'name' =&gt; sprintf("%s.%s", str_random(), $faker-&gt;randomElement(['png', 'jpg'])),
+    ];
+});</code></pre>
+<p><code>App\Attachment</code> 모델은 사용자가 업로드한 파일의 이름(또는 경로)을 담고 있는 모델이란 것을 이해하고 넘어가자. 가령, 사용자가 'foo.png'를 업로드 했다면, 이 모델의 'name' Attribute는 'foo.png'가 되는 것이다.</p>
+<p><strong><code>참고</code></strong> 필자가 필드(field), Attribute, Property 란 용어를 혼용해서 사용하는데 모두 같은 의미로 이해하자. HTML 폼이나 DB 테이블에서는 필드라는 이름이 좀 더 적절하고, 오브젝트 컨텍스트에서는 Attribute나 Property란 용어가 더 적절할 것이다. </p>
+<h3>Seeder 작성</h3>
+<p>편의상 app/database/seeds/DatabaseSeeder.php 에 전부 몰아 넣었지만, 쪼개서 설명한다.</p>
+<pre><code class="language-php">use Faker\Factory as Faker;
+
+class DatabaseSeeder extends Seeder
+{
+    public function run()
+    {
+        /*
+         * Prepare seeding
+         */
+        $faker = Faker::create();
+        DB::statement('SET FOREIGN_KEY_CHECKS=0');
+        Model::unguard();
+
+        /*
+         * Seeding users table
+         */
+        App\User::truncate();
+        factory(App\User::class)-&gt;create([
+            'name' =&gt; 'John Doe',
+            'email' =&gt; 'john@example.com',
+            'password' =&gt; bcrypt('password')
+        ]);
+        factory(App\User::class, 9)-&gt;create();
+        $this-&gt;command-&gt;info('users table seeded');</code></pre>
+<p><code>truncate()</code> 메소드로 users 테이블을 비운다. 테스트를 위해 사용할 john@example.com 계정을 만들고, 나머지 Dummy 계정 9개를 만들었다. </p>
+<pre><code class="language-php">        /**
+         * Seeding roles table
+         */
+        Bican\Roles\Models\Role::truncate();
+        DB::table('role_user')-&gt;truncate();
+        $adminRole = Bican\Roles\Models\Role::create([
+            'name' =&gt; 'Admin',
+            'slug' =&gt; 'admin'
+        ]);
+        $memberRole = Bican\Roles\Models\Role::create([
+            'name' =&gt; 'Member',
+            'slug' =&gt; 'member'
+        ]);
+
+        App\User::where('email', '!=', 'john@example.com')-&gt;get()-&gt;map(function($user) use($memberRole) {
+            $user-&gt;attachRole($memberRole);
+        });
+
+        App\User::whereEmail('john@example.com')-&gt;get()-&gt;map(function($user) use($adminRole){
+            $user-&gt;attachRole($adminRole);
+        });
+        $this-&gt;command-&gt;info('roles table seeded');</code></pre>
+<p>'Admin' 과 'Member' 역할을 만들고, john@example.com 계정에는 'Admin' 역할을, 나머지 계정에는 'Member' 권한을 할당하였다. <code>$user-&gt;attachRole(Bican\Roles\Models\Role|int $role)</code> 메소드는 'bican/role' 에서 제공하는 Helper 메소드로, <code>$user-&gt;roles()-&gt;attach(array $roleId)</code> 또는 <code>$user-&gt;roles()-&gt;sync(array $roleId)</code>와 같은 역할을 한다.</p>
+<pre><code class="language-php">        /*
+         * Seeding articles table
+         */
+        App\Article::truncate();
+        $users = App\User::all();
+
+        $users-&gt;each(function($user) use($faker) {
+            $user-&gt;articles()-&gt;save(
+                factory(App\Article::class)-&gt;make()
+            );
+        });
+        $this-&gt;command-&gt;info('articles table seeded');</code></pre>
+<p>앞서 생성된 모든 <code>App\User</code> 컬렉션을 <code>$users</code> 변수에 담았다. <code>each()</code> 메소드로 루프를 돌면서, <code>article()</code> 관계를 이용해 <code>App\Article</code> 인스턴스를 만들었다 </p>
+<pre><code class="language-php">        /**
+         * Seeding comments table
+         */
+        App\Comment::truncate();
+        $articles = App\Article::all();
+
+        $articles-&gt;each(function($article) use($faker, $users) {
+            $article-&gt;comments()-&gt;save(
+                factory(App\Comment::class)-&gt;make([
+                    'author_id' =&gt; $faker-&gt;randomElement($users-&gt;lists('id')-&gt;toArray())
+                ])
+            );
+        });
+        $this-&gt;command-&gt;info('comments table seeded');</code></pre>
+<p>Article 모델과 동일하게, 이번에는 앞서 생성된 <code>App\Article</code> 전체 컬렉션을 <code>$articles</code> 변수에 담고, 루프를 돌면서 미리 모델에서 정의한 관계를 이용해 <code>App\Comment</code> 인스턴스를 만든다. 여기서 <code>factory()-&gt;make()</code> 메소드에 인자로 넘긴 값은, 모델 팩토리에서 정의한 값을 오버라이드하거나 추가하는 값이다. 'author_id' 필드를 <code>$faker-&gt;randomElement()</code> 메소드를 이용하여 넣어 주었다.</p>
+<p><img src="./images/36-models-img-02.png" alt="" /></p>
+<pre><code class="language-php">        /*
+         * Seeding tags table
+         */
+        App\Tag::truncate();
+        DB::table('article_tag')-&gt;truncate();
+        $articles-&gt;each(function($article) use($faker) {
+            $article-&gt;tags()-&gt;save(
+                factory(App\Tag::class)-&gt;make()
+            );
+        });
+        $this-&gt;command-&gt;info('tags table seeded');</code></pre>
+<p>'article_tag' 피봇테이블은 모델을 정의하지 않았기 때문에, DB Facade를 이용하여 <code>truncate()</code> 하였다.</p>
+<pre><code class="language-php">        /*
+         * Seeding attachments table
+         */
+        App\Attachment::truncate();
+        if (! File::isDirectory(attachment_path())) {
+            File::deleteDirectory(attachment_path(), true);
+        }
+
+        $articles-&gt;each(function($article) use($faker) {
+            $article-&gt;attachments()-&gt;save(
+                factory(App\Attachment::class)-&gt;make()
+            );
+        });
+
+        $files = App\Attachment::lists('name');
+
+        if (! File::isDirectory(attachment_path())) {
+            File::makeDirectory(attachment_path(), 777, true);
+        }
+
+        foreach($files as $file) {
+            File::put(attachment_path($file), '');
+        }
+
+        $this-&gt;command-&gt;info('attachments table seeded');
+
+        /**
+         * Close seeding
+         */
+        Model::reguard();
+        DB::statement('SET FOREIGN_KEY_CHECKS=1');
+    }
+}</code></pre>
+<p><code>App\Attachment</code> Seeder에서는 DB 테이블에 저장되는 모델 뿐 아니라, 사용자가 업로드하여 서버의 파일 시스템에 저장되는 파일들도 같이 생성해 주어야 한다. 해서, <code>truncate()</code> 하는 과정에서 파일이 저장된 디렉토리를 청소해 주었고, Seeding 하면서 Dummy 파일도 같이 생성해 주었다.</p>
+<h3>Helper Function</h3>
+<p>Seeding 과정에서 사용한 <code>attachment_path()</code> Helper 을 app/helpers.php 에 만들어 주자.</p>
+<pre><code class="language-php">if (! function_exists('attachment_path')) {
+    /**
+     * @param string $path
+     *
+     * @return string
+     */
+    function attachment_path($path = '')
+    {
+        return public_path($path ? 'attachments'.DIRECTORY_SEPARATOR.$path : 'attachments');
+    }
+}</code></pre>
+<h3>테스트</h3>
+<p>Seeding 을 실행하자. 마이그레이션부터 완전 다시 할 것이다.</p>
+<pre><code class="language-bash">$ php artisan migrate:refresh --seed
+
+# Above command is equivalent to the following 3 commands... 
+# php artisan migrate:reset
+# php artisan migrate
+# php artisan db:seed</code></pre>
+<p>오류 없이 실행되었다면, 마이그레이션, 모델과 관계설정, 모델 팩토리, Seeder 모두가 정상적으로 작성된 것이다. 더블 체크를 위해 artisan CLI 로 더 확인해 보아도 좋다.</p>
+<pre><code class="language-bash">$ php artisan tinker
+
+&gt;&gt;&gt; $user = App\User::find(1);
+&gt;&gt;&gt; $user-&gt;articles()-&gt;first();
+&gt;&gt;&gt; $user-&gt;comments()-&gt;first();
+
+&gt;&gt;&gt; $article = App\Article::find(1);
+&gt;&gt;&gt; $article-&gt;author()-&gt;first();
+&gt;&gt;&gt; $article-&gt;tags()-&gt;first();
+&gt;&gt;&gt; $article-&gt;comments()-&gt;first();
+&gt;&gt;&gt; $article-&gt;attachments()-&gt;first();
+
+&gt;&gt;&gt; $comment = App\Comment::find(1);
+&gt;&gt;&gt; $comment-&gt;author()-&gt;first();
+&gt;&gt;&gt; $comment-&gt;commentable()-&gt;first();
+&gt;&gt;&gt; $comment-&gt;replies()-&gt;first();
+&gt;&gt;&gt; $comment-&gt;parent()-&gt;first();
+
+&gt;&gt;&gt; $tag = App\Tag::find(1);
+&gt;&gt;&gt; $tag-&gt;articles()-&gt;first();
+
+&gt;&gt;&gt; $attachment = App\Attachment::find(1);
+&gt;&gt;&gt; $attachment-&gt;article()-&gt;first();</code></pre>
+<!--@start-->
+<hr />
+<ul>
+<li><a href="../readme.md">목록으로 돌아가기</a></li>
+<li><a href="35-locale.md">35강 - 다국어 지원</a></li>
+<li><a href="37-articles.md">37강 - Article 기능 구현</a>
+<!--@end--></li>
+</ul>
+
+          <hr/>
+
+          <nav id="pagination">
+  <ul class="pager pager-bottom">
+    <li class="previous ">
+      <a href="/lessons/35-locale.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          35강 - 다국어 지원
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/37-articles.html">
+        <span class="pager-title">
+          37강 - Article 기능...
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr class="divider">
+
+          <div class="comments" style="margin-bottom: 30px;">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//l5lessons.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
+</div>              </article>
+
+
+      <!--Disqus here-->
+    </div>
+  </div>
+
+  <div id="toggler">
+    <a href="#" title="Open Menu">
+      목록 토글
+    </a>
+  </div>
+
+  <footer id="footer">
+  <div>
+    &copy; 2016 &nbsp; <a href="https://github.com/appkr">appkr</a> •
+    Built with <a href="http://jigsaw.tighten.co/">Jigsaw</a> •
+    Hosted by <a href="https://pages.github.com/">Github</a> •
+    <a href="/feed.xml">Rss</a>
+  </div>
+</footer>
+
+<div id="back-to-top">
+  <a href="#" title="Scroll to Top">
+    <i class="material-icons">keyboard_arrow_up</i>
+  </a>
+</div>
+  <script src="/js/all.js"></script>
+</body>
+</html>
