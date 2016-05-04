@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="google-site-verification" content=""/>
+  <meta name="naver-site-verification" content=""/>
+
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:author" content="appkr (juwonkim@me.com)"/>
+  <meta property="og:image" content=""/>
+
+  <!-- Google+ Meta -->
+  <meta itemprop="name" content="라라벨 5 입문 및 실전">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="">
+  <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@appkrs"/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:image" content=""/>
+  <meta name="twitter:domain" content="example.com">
+
+  <!-- Mobile and Rss -->
+  <link rel="canonical" href="http://l5.appkr.kr/"/>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <title>라라벨 5 입문 및 실전</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="#app">
+  <nav class="navbar navbar-fixed-top role="navigation">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">
+        <i class="material-icons">school</i>
+        라라벨 5 입문 및 실전
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <aside id="sidebar" class="col-md-3">
+        <ul>
+                      <li  index="0" current-index="42">
+              <a href="/lessons/01-welcome.html">1강 - 처음 만나는 라라벨</a>
+            </li>
+                      <li  index="1" current-index="42">
+              <a href="/lessons/02-hello-laravel.html">2강 - 라라벨 5 설치하기</a>
+            </li>
+                      <li  index="2" current-index="42">
+              <a href="/lessons/02-install-on-windows.html">2강 - 라라벨 5 설치하기 (on Windows)</a>
+            </li>
+                      <li  index="3" current-index="42">
+              <a href="/lessons/03-configuration.html">3강 - 글로벌 설정 살펴보기</a>
+            </li>
+                      <li  index="4" current-index="42">
+              <a href="/lessons/04-routing-basics.html">4강 - Routing 기본기</a>
+            </li>
+                      <li  index="5" current-index="42">
+              <a href="/lessons/05-pass-data-to-view.html">5강 - 뷰에 데이터 바인딩하기</a>
+            </li>
+                      <li  index="6" current-index="42">
+              <a href="/lessons/06-blade-101.html">6강 - 블레이드 101</a>
+            </li>
+                      <li  index="7" current-index="42">
+              <a href="/lessons/07-blade-201.html">7강 - 블레이드 201</a>
+            </li>
+                      <li  index="8" current-index="42">
+              <a href="/lessons/08-raw-queries.html">8강 - 날 쿼리 :(</a>
+            </li>
+                      <li  index="9" current-index="42">
+              <a href="/lessons/09-query-builder.html">9강 - 쿼리 빌더</a>
+            </li>
+                      <li  index="10" current-index="42">
+              <a href="/lessons/10-eloquent.html">10강 - 엘로퀀트 ORM</a>
+            </li>
+                      <li  index="11" current-index="42">
+              <a href="/lessons/11-migration.html">11강 - DB 마이그레이션</a>
+            </li>
+                      <li  index="12" current-index="42">
+              <a href="/lessons/12-controller.html">12강 - 컨트롤러</a>
+            </li>
+                      <li  index="13" current-index="42">
+              <a href="/lessons/13-restful-resource-controller.html">13강 - RESTful 리소스 컨트롤러</a>
+            </li>
+                      <li  index="14" current-index="42">
+              <a href="/lessons/14-named-routes.html">14강 - 이름 있는 Route</a>
+            </li>
+                      <li  index="15" current-index="42">
+              <a href="/lessons/15-nested-resources.html">15강 - 중첩된 리소스</a>
+            </li>
+                      <li  index="16" current-index="42">
+              <a href="/lessons/16-authentication.html">16강 - 사용자 인증 기본기</a>
+            </li>
+                      <li  index="17" current-index="42">
+              <a href="/lessons/17-authentication-201.html">17강 - 라라벨에 내장된 사용자 인증</a>
+            </li>
+                      <li  index="18" current-index="42">
+              <a href="/lessons/18-eloquent-relationships.html">18강 - 모델간 관계 맺기</a>
+            </li>
+                      <li  index="19" current-index="42">
+              <a href="/lessons/19-seeder.html">19강 - 데이터 심기</a>
+            </li>
+                      <li  index="20" current-index="42">
+              <a href="/lessons/20-eager-loading.html">20강 - Eager 로딩</a>
+            </li>
+                      <li  index="21" current-index="42">
+              <a href="/lessons/20-1-pagination.html">추가 - 페이징</a>
+            </li>
+                      <li  index="22" current-index="42">
+              <a href="/lessons/21-mail.html">21강 - 메일 보내기</a>
+            </li>
+                      <li  index="23" current-index="42">
+              <a href="/lessons/22-events.html">22강 - 이벤트</a>
+            </li>
+                      <li  index="24" current-index="42">
+              <a href="/lessons/23-validation.html">23강 - 입력 값 유효성 검사</a>
+            </li>
+                      <li  index="25" current-index="42">
+              <a href="/lessons/24-exception-handling.html">24강 - 예외 처리</a>
+            </li>
+                      <li  index="26" current-index="42">
+              <a href="/lessons/25-composer.html">25강 - 컴포저</a>
+            </li>
+                      <li  index="27" current-index="42">
+              <a href="/lessons/26-document-model.html">26강 - Document 모델</a>
+            </li>
+                      <li  index="28" current-index="42">
+              <a href="/lessons/27-document-controller.html">27강 - Document 컨트롤러</a>
+            </li>
+                      <li  index="29" current-index="42">
+              <a href="/lessons/28-cache.html">28강 - Cache</a>
+            </li>
+                      <li  index="30" current-index="42">
+              <a href="/lessons/29-elixir.html">29강 - Elixir, 만병통치약?</a>
+            </li>
+                      <li  index="31" current-index="42">
+              <a href="/lessons/30-final-touch.html">30강 - Debug &amp; Final Touch</a>
+            </li>
+                      <li  index="32" current-index="42">
+              <a href="/lessons/31-forum-features.html">31강 - 포럼 요구사항 기획</a>
+            </li>
+                      <li  index="33" current-index="42">
+              <a href="/lessons/32-login.html">32강 - 사용자 로그인</a>
+            </li>
+                      <li  index="34" current-index="42">
+              <a href="/lessons/33-social-login.html">33강 - 소셜 로그인</a>
+            </li>
+                      <li  index="35" current-index="42">
+              <a href="/lessons/34-role.html">34강 - 사용자 역할</a>
+            </li>
+                      <li  index="36" current-index="42">
+              <a href="/lessons/35-locale.html">35강 - 다국어 지원</a>
+            </li>
+                      <li  index="37" current-index="42">
+              <a href="/lessons/36-models.html">36강 - 마이그레이션과 모델</a>
+            </li>
+                      <li  index="38" current-index="42">
+              <a href="/lessons/37-articles.html">37강 - Article 기능 구현</a>
+            </li>
+                      <li  index="39" current-index="42">
+              <a href="/lessons/38-tags.html">38강 - Tag 기능 구현</a>
+            </li>
+                      <li  index="40" current-index="42">
+              <a href="/lessons/39-attachments.html">39강 - Attachment 기능 구현</a>
+            </li>
+                      <li  index="41" current-index="42">
+              <a href="/lessons/32n33-auth-refactoring.html">32/33 보충 - 인증 리팩토링</a>
+            </li>
+                      <li class="active" index="42" current-index="42">
+              <a href="/lessons/40-comments.html">40강 - Comment 기능 구현</a>
+            </li>
+                      <li  index="43" current-index="42">
+              <a href="/lessons/41-ui-makeup.html">41강 - UI 개선</a>
+            </li>
+                      <li  index="44" current-index="42">
+              <a href="/lessons/42-be-makeup.html">42강 - 서버 사이드 개선</a>
+            </li>
+                      <li  index="45" current-index="42">
+              <a href="/lessons/43-change-note.html">43강 - 변경 사항 알림</a>
+            </li>
+                      <li  index="46" current-index="42">
+              <a href="/lessons/44-api-basic.html">44강 - API 기본기 및 기획</a>
+            </li>
+                      <li  index="47" current-index="42">
+              <a href="/lessons/45-api-big-picture.html">45강 - 기본 구조 잡기</a>
+            </li>
+                      <li  index="48" current-index="42">
+              <a href="/lessons/46-jwt.html">46강 - JWT 를 이용한 인증</a>
+            </li>
+                      <li  index="49" current-index="42">
+              <a href="/lessons/47-dry-refactoring.html">47강 - 중복 제거 리팩토링</a>
+            </li>
+                      <li  index="50" current-index="42">
+              <a href="/lessons/48-all-is-bad.html">48강 - all() is bad</a>
+            </li>
+                      <li  index="51" current-index="42">
+              <a href="/lessons/49-rate-limit.html">49강 - API Rate Limit</a>
+            </li>
+                      <li  index="52" current-index="42">
+              <a href="/lessons/50-id-obfuscation.html">50강 - 리소스 id 난독화</a>
+            </li>
+                      <li  index="53" current-index="42">
+              <a href="/lessons/51-cors.html">51강 - CORS</a>
+            </li>
+                      <li  index="54" current-index="42">
+              <a href="/lessons/52-caching.html">52강 - Caching</a>
+            </li>
+                      <li  index="55" current-index="42">
+              <a href="/lessons/53-partial-response.html">53강 - Partial Response</a>
+            </li>
+                      <li  index="56" current-index="42">
+              <a href="/lessons/54-api-docs.html">54강 - API Documents</a>
+            </li>
+                      <li  index="57" current-index="42">
+              <a href="/lessons/02-install-homestead-osx.html">Homestead 설치 (on Mac)</a>
+            </li>
+                      <li  index="58" current-index="42">
+              <a href="/lessons/02-install-homestead-windows.html">Homestead 설치 (on Windows)</a>
+            </li>
+                      <li  index="59" current-index="42">
+              <a href="/lessons/999-code-release.html">코드 배포</a>
+            </li>
+                  </ul>
+      </aside>
+
+      <article id="article" class="col-md-9">
+                  <nav id="pagination">
+  <ul class="pager pager-top">
+    <li class="previous ">
+      <a href="/lessons/32n33-auth-refactoring.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          32/33 보충 - 인증 리...
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/41-ui-makeup.html">
+        <span class="pager-title">
+          41강 - UI 개선
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr/>
+
+          <h1>실전 프로젝트 2 - Forum</h1>
+<h2>40강 - Comment 기능 구현</h2>
+<p>이번 강에서 Comment 의 기본 기능들을 구현한다. 뷰 구조가 워낙 복잡해서 잘 설명할 수 있을 지 모르겠지만, 최선을 다하리라 다짐해 본다. 뷰에 관심 없는 분들은, 모델과 컨트롤러 코드 위주로 이해하고 넘어가시길 바란다. 다음 강에서도 Markdown Helper Overlay, Markdown 미리보기, Markdown 작성 도우미 등의 사용자 경험을 향상시키기 위한 기능들을 추가해 보려 한다.</p>
+<h3>버그 수정</h3>
+<p>먼저, 기존에 잘못 작성된 마이그레이션에 <code>nullable()</code> 속성을 추가했다. 수정했으니 마이그레이션 실행 <code>$ php artisan migrate:refresh --seed</code> 이젠 알아서 척척~</p>
+<pre><code class="language-php">// database/migrations/create_comments_table.php
+
+public function up()
+{
+    Schema::create('comments', function (Blueprint $table) {
+        $table-&gt;integer('parent_id')-&gt;unsigned()-&gt;nullable();
+        $table-&gt;string('title')-&gt;nullable();
+        // ...
+    }
+}</code></pre>
+<h3>동작 구조 설계</h3>
+<p><a href="docs/37-articles.md">37강 - Article 기능 구현</a> 에서 보았듯이, Comment (== 댓글)는 포럼 상세 보기에서 표시할 것이다. 여기에 댓글 목록, 수정 폼, 삭제 폼, 쓰기 폼 등을 덧 붙일 것이다. 즉, <code>ArticlesController::show()</code> 메소드에서 앞서 나열한 뷰들에 필요한 데이터를 주어야 한다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function show($id)
+{
+    $article = Article::with('comments', 'author', 'tags')-&gt;findOrFail($id);
+    $commentsCollection = $article-&gt;comments()-&gt;with('replies', 'author')-&gt;whereNull('parent_id')-&gt;latest()-&gt;get();
+
+    return view('articles.show', [
+        'article'         =&gt; $article,
+        'comments'        =&gt; $commentsCollection,
+        'commentableType' =&gt; Article::class,
+        'commentableId'   =&gt; $article-&gt;id
+    ]);
+}</code></pre>
+<p><code>App\Article</code> 모델에서 Morph Many to Many 로 정의한 <code>comments()</code> 를 체인해서 <code>App\Comment</code> 인스턴스를 얻었다. 얻어진 <code>App\Comment</code> 모델에 Eager Loading 으로 <code>replies()</code> 등의 관계를 호출한 후 'parent_id'가 <code>null</code> 인 레코드들만 가져와서, <code>$commentsCollection</code> 에 담았다. 즉, 부모 댓글이 없는 최상위 댓글만 가져오겠단 의미이다.</p>
+<p><code>view()</code>를 반환하면서, <code>$commentableType</code>, <code>$commentableId</code> 변수도 뷰에 바인딩하였다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/show.blade.php --&gt;
+
+@section('content')
+
+  &lt;!-- Other HTML codes ... --&gt;
+
+     &lt;article&gt;
+       @include('comments.index')
+     &lt;/article&gt;
+   &lt;/div&gt;
+  &lt;/div&gt;
+@stop</code></pre>
+<p>'articles.show' 뷰에서 'comments.index' 뷰를 <code>@include</code> 하였다. 'comments.index' 뷰를 만들고 컨트롤러에서 바인딩시킨 변수들이 잘 넘어 왔는 지 확인해 보자.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/index.blade.php --&gt;
+
+&lt;div class="container__forum"&gt;
+  &lt;?php var_dump($comments-&gt;toArray()) ?&gt;
+  &lt;?php var_dump($commentableType) ?&gt;
+  &lt;?php var_dump($commentableId) ?&gt;
+&lt;/div&gt;</code></pre>
+<p><img src="./images/40-comments-img-01.png" alt="" /></p>
+<h3>뷰 구조</h3>
+<p>앞 절에서 'comments.index' 뷰로 뷰 데이터들이 잘 넘어오는 것을 확인했으니, 뷰 구조를 좀 더 확장해서 볼 것이다. 먼저 아래 그림을 확인하자. 빨강은 뷰 이름, 검정은 HTML class 이름이다. </p>
+<p><img src="./images/40-comments-img-02.png" alt="" /></p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/index.blade.php --&gt;
+
+&lt;div class="container__forum"&gt;
+  @if($currentUser)
+    @include('comments.partial.create')
+  @endif
+
+  @forelse($comments as $comment)
+    @include('comments.partial.comment', ['parentId' =&gt; $comment-&gt;id])
+  @empty
+  @endforelse
+&lt;/div&gt;</code></pre>
+<p>최상위 댓글을 작성할 수 있는 뷰인 'comments.partial.create' 뷰를 로그인이 되었을 경우에만 <code>@include</code> 하였다. </p>
+<p><code>@forelse</code> 로 반복하면서, 'comments.partial.comment' 뷰를 이용해 현재 포럼 상세 보기에 해당하 <code>App\Article</code> 모델과 연결된 댓글들의 목록을 보여줄 것이다. 여기서 하위 뷰에 <code>$parentId</code> 란 변수를 넘겨 주었는데, 이는 하위 뷰에서 대댓글을 작성할 때 유용하게 사용된다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/partial/comment.blade.php --&gt;
+
+&lt;div class="media media__item" data-id="{{ $comment-&gt;id }}"&gt;
+
+  @include('users.partial.avatar', ['user' =&gt;  $comment-&gt;author])
+
+  &lt;div class="media-body"&gt;
+    @if($currentUser and ($comment-&gt;isAuthor() or $currentUser-&gt;isAdmin()))
+      @include('comments.partial.control')
+    @endif
+
+    &lt;h4 class="media-heading"&gt;
+      &lt;!-- Gravatar and comment generated time are presented here ... --&gt;
+    &lt;/h4&gt;
+    &lt;p&gt;{!! markdown($comment-&gt;content) !!}&lt;/p&gt;
+
+    @if ($currentUser)
+    &lt;p class="text-right"&gt;
+      &lt;!-- "Reply" button is presented here ... --&gt;
+    &lt;/p&gt;
+    @endif
+
+    @if($currentUser and ($comment-&gt;isAuthor() or $currentUser-&gt;isAdmin()))
+      @include('comments.partial.edit')
+    @endif
+
+    @if($currentUser)
+      @include('comments.partial.create', ['parentId' =&gt; $comment-&gt;id])
+    @endif
+
+    @forelse ($comment-&gt;replies as $reply)
+      @include('comments.partial.comment', ['comment'  =&gt; $reply])
+    @empty
+    @endforelse
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>이 뷰에서는 현재 화면에 뿌리는 댓글을 수정 또는 삭제를 트리거하기 위한 컨트롤 요소를 'comments.partial.control' 뷰에 포함하고 있다. </p>
+<p>또, 대댓글을 작성하는 'comments.partial.create' 폼, 현재 댓글을 수정할 수 있는 'comments.partial.edit' 폼을 포함하고 있다. Article 모델과 같이 Comment 모델에도 <code>isAuthor()</code> 메소드를 추가했는데, 이렇게 중복이 발생하는 경우에는 trait 로 빼는 것이 좋을 것 같다. </p>
+<p>이 뷰에서 가장 눈여겨 볼 것은, 재귀적으로 뷰를 <code>@include</code> 하고있다는 것이다. 다시 말하면, <code>$comment-&gt;replies</code> 값이 있으면 (== 대댓글), 자기 뷰 안에 자기 자신 즉, 'comments.partial.comment' 자식뷰를 계속 Nesting 한다는 것이다. </p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/partial/create.blade.php --&gt;
+
+&lt;div class="media media__create"&gt;
+  @include('users.partial.avatar', ['user' =&gt; $currentUser])
+  &lt;div class="media-body"&gt;
+    &lt;form action="{{ route('comments.store') }}" method="POST" role="form" class="form-horizontal form-create-comment"&gt;
+      {!! csrf_field() !!}
+      &lt;input type="hidden" name="commentable_type" value="{{ $commentableType }}"&gt;
+      &lt;input type="hidden" name="commentable_id" value="{{ $commentableId }}"&gt;
+      @if(isset($parentId))
+        &lt;input type="hidden" name="parent_id" value="{{ $parentId }}"&gt;
+      @endif
+
+      &lt;!-- Other HTML form tags ... --&gt;
+
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>앞서 보았듯이, 위 뷰는 일반 댓글을 작성하기 위한 폼으로도, 'comments.partial.comment' 의 재귀적 호출 즉, 댓글의 댓글을 작성하기 위한 폼으로도 사용된다. 재귀적 호출일 때, 일종의 플래그 역할을 하기 위해서 하위 뷰에 <code>$parentId</code> 변수를 넘겨 주었고, 위 댓글 작성 폼이 최상위 댓글이 아니라 댓글의 댓글 작성 폼으로 사용되었을 때 부모 댓글이 있음을 <code>CommentsController::store()</code> 에 알리기 위해서 <code>@if(isset($parentId))</code> 로 숨김 필드를 선택적으로 생성하였다.</p>
+<p>현재 로그인한 사용자, 즉 신규 댓글을 작성할 사용자의 사진을 보여주기 위해 <code>@include('users.partial.avatar', ['user' =&gt; $currentUser])</code> 를 호출했고, 뷰에 공유된 데이터인 <code>$currentUser</code> 를 넘겨 주었다.</p>
+<p>댓글 작성 후 폼 전송을 하게 될 텐데, 이 때 서버 측이 어떤 모델의 어떤 id에 연결시킬 지 힌트를 주기 위해 <code>$commentableType</code>, <code>$commentableId</code> 변수를 숨김 필드에 담았다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/partial/control.blade.php --&gt;
+
+&lt;div class="dropdown pull-right hidden-xs hidden-sm"&gt;
+  &lt;span class="dropdown-toggle btn btn-default btn-xs" type="button" data-toggle="dropdown"&gt;
+    {!! icon('dropdown') !!}
+  &lt;/span&gt;
+  &lt;ul class="dropdown-menu" role="menu"&gt;
+    &lt;li role="presentation"&gt;
+      &lt;a role="menuitem" tabindex="-1" alt="edit" class="btn__edit"&gt;
+        {!! icon('update') !!} Edit
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li role="presentation"&gt;
+      &lt;a role="menuitem" tabindex="-1" alt="delete" class="btn__delete"&gt;
+        {!! icon('delete') !!} Delete
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<p>댓글 수정 및 삭제 컨트롤 UI를 위해 <a href="http://getbootstrap.com/components/#dropdowns">Bootstrap Dropdowns</a> 에서 디자인을 훔쳐와서 적용했을 뿐, 구현상 특별한 점은 없다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/partial/edit.blade.php --&gt;
+
+&lt;div class="media media__edit"&gt;
+  &lt;div class="media-body"&gt;
+    &lt;form action="{{ route('comments.update', $comment-&gt;id) }}" method="POST" role="form" class="form-horizontal"&gt;
+      {!! csrf_field() !!}
+      {!! method_field('PUT') !!}
+
+      &lt;div class="form-group" style="width:100%; margin: auto;"&gt;
+        &lt;textarea name="content" class="form-control" style="width:100%; padding:1rem;"&gt;{{ old('content', $comment-&gt;content) }}&lt;/textarea&gt;
+        {!! $errors-&gt;first('content', '&lt;span class="form-error"&gt;:message&lt;/span&gt;') !!}
+      &lt;/div&gt;
+
+      &lt;p class="text-right" style="margin:0;"&gt;
+        &lt;button type="submit" class="btn btn-primary btn-sm" style="margin-top: 1rem;"&gt;
+          {!! icon('plane') !!} Edit
+        &lt;/button&gt;
+      &lt;/p&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>수정 폼도 우리가 앞에서 흔히 봐 왔던 폼이다. 다만 이미 'commentable_type', 'commentable_id' 가 이미 저장되어 있는 <code>App\Comment</code> 모델을 수정하는 것이므로, 기존의 댓글 작성 폼과 달리 숨김 필드가 필요 없다.</p>
+<p>여기까지 작업하고 테스트해 보면, 에러가 날 것이다. Route 정의와 컨트롤러가 없어서 이다.</p>
+<h3>컨트롤러 구현</h3>
+<pre><code class="language-bash">$ php artisan make:controller CommentsController --resource</code></pre>
+<p>'index', 'create', '...' 뷰 요청하는 메소드는 필요없으므로 Route 정의에서 제외했다.</p>
+<pre><code class="language-php">// app/Http/routes.php
+
+Route::resource('comments', 'CommentsController', ['only' =&gt; ['store', 'update', 'destroy']]);</code></pre>
+<h4>댓글 생성 로직 구현</h4>
+<p>댓글 기능을 한번만 구현하고, <code>App\Article</code>, <code>App\Something</code>, ... 여러 모델에서 사용하기 위해서 우리가 선택한 디자인은 Morph Many to Many 였다 (사실은 학습 목적이 더 강하다). 이 절의 컨트롤러 구현에서 여러 모델에서 Comment 기능을 공유해서 쓰기 위해, 어떻게 했는 지 눈여겨 살펴보기 바란다.</p>
+<pre><code class="language-php">// app/Http/Controllers/CommentsController.php
+
+class CommentsController extends Controller
+{
+    public function __construct()
+    {
+        $this-&gt;middleware('auth');
+        $this-&gt;middleware('author:comment', ['except' =&gt; ['store']]);
+    }
+
+    public function store(Request $request)
+    {
+        $this-&gt;validate($request, [
+            'commentable_type' =&gt; 'required|in:App\Article',
+            'commentable_id'   =&gt; 'required|numeric',
+            'parent_id'        =&gt; 'numeric|exists:comments,id',
+            'content'          =&gt; 'required',
+        ]);
+
+        $parentModel = "\\" . $request-&gt;input('commentable_type');
+        $parentModel::find($request-&gt;input('commentable_id'))
+            -&gt;comments()-&gt;create([
+                'author_id' =&gt; \Auth::user()-&gt;id,
+                'parent_id' =&gt; $request-&gt;input('parent_id', null),
+                'content'   =&gt; $request-&gt;input('content')
+            ]);
+
+        flash()-&gt;success(trans('forum.comment_add'));
+
+        return back();
+    }
+}</code></pre>
+<p>유효성 검사 규칙 중에 'in:App\Article' 부분이 보일 것이다. 연결된 모델이 늘어나면, 'in:App\Article,App\Something' 처럼 콤마(,)를 찍고 계속 넣을 수 있다. </p>
+<p>'parent_id' 유효성 검사에서는 'exists:comments,id' 을 쓰고 있는데, 'comments' 테이블에 <code>whereId($request-&gt;input('parent_id'))</code>로 쿼리했을 때 레코드가 있어야 한다는 의미이다. 그럴 경우는 거의 없겠지만, 대댓글을 작성하는 중에 원본 댓글의 작성자가 삭제하는 경우를 생각해 볼 수 있을 것이다.</p>
+<p><code>$parentModel = "\\" . $request-&gt;input('commentable_type')</code> 은 문자열 '\App\Article' 을 생성하고 <code>$parentModel</code> 변수에 담는다. 코드에서 <code>$parentModel::find()</code> 는 결국 <code>\App\Article::find()</code> 로 치환된다. 유효성 검사를 한번 거쳤으므로 없는 모델에 쿼리하는 Exception 은 발생하지 않을 것이다.</p>
+<h4>미들웨어 수정</h4>
+<p>위 절의 <code>CommentsController::__construct()</code> 에서 <code>ArticlesController::__construct()</code> 에서 썼던 <code>CanAccessArticle (별칭 'accessible')</code> 미들웨어를 썼다. 권한에 맞게 생성, 수정, 삭제 UI를 뷰에서 숨겼다고는 하나, ArticlesController 에서와 마찬가지로 HTTP Client 를 이용하여 직접 요청하는 경우에 대해서도 방어해야 하기에... <a href="http://laravel.com/docs/middleware#middleware-parameters">미들웨어 파라미터</a> 기능을 이용해서 여러 컨트롤러에서 사용할 수 있도록 기존 미들웨어를 수정해 보자.</p>
+<p>네이밍은 항상 힘들다. 'CanAccessArticle' 에서 좀 더 일반적인 'AuthorOnly' 로, 그리고 별칭은 'author' 로 수정했다.</p>
+<pre><code class="language-php">// app/Http/Kernel.php
+
+protected $routeMiddleware = [
+    // ...
+    'author' =&gt; \App\Http\Middleware\AuthorOnly::class,
+];</code></pre>
+<p>미들웨어 파라미터 사용법이다. <code>handle()</code> 메소드의 세번째 인자로 <code>$param</code>을 받았다. 이는 소문자로 된 모델 이름이라고 우리 나름의 규칙을 정하자.  <code>$model</code> 을 받아 오는 부분은 <code>CommentsController::store()</code> 에서 한거랑 비슷한 구현이다. <code>str_plural(string $value)</code> 은 라라벨 내장 Helper 로, 인자로 넘겨 받은 영문으로 된 <code>$value</code> 를 복수 단어로 변환해 준다.</p>
+<p>미들웨어 파라미터는 컨트롤러에서 <code>$this-&gt;middleware('미들웨어별칭:파라미터')</code> 식으로 쓸 수 있다.</p>
+<pre><code class="language-php">// app/Http/Middlewares/AuthorOnly.php
+
+public function handle(Request $request, Closure $next, $param)
+{
+    $user = $request-&gt;user();
+    $model = '\\App\\' . ucfirst($param);
+    $modelId = $request-&gt;route(str_plural($param));
+
+    if (! $model::whereId($modelId)-&gt;whereAuthorId($user-&gt;id)-&gt;exists() and ! $user-&gt;isAdmin()) {
+        flash()-&gt;error(trans('errors.forbidden') . ' : ' . trans('errors.forbidden_description'));
+        return back();
+    }
+
+    return $next($request);
+}</code></pre>
+<p>미들웨어를 수정했으니 기존의 <code>ArticlesController</code> 도 <code>$this-&gt;middleware('author:article', [...]);</code> 로 수정해 주자.</p>
+<h4>댓글 수정 및 삭제 로직 구현</h4>
+<p>수정 로직은 특별한게 없다. 일단, 아래 코드를 보자.</p>
+<pre><code class="language-php">// app/Http/Controllers/CommentsController.php
+
+class CommentsController extends Controller
+{
+    // Other methods ...
+
+    public function update(Request $request, $id)
+    {
+        $this-&gt;validate($request, ['content' =&gt; 'required']);
+
+        Comment::findOrFail($id)-&gt;update($request-&gt;only('content'));
+        flash()-&gt;success(trans('forum.comment_edit'));
+
+        return back();
+    }
+
+    public function destroy(Request $request, $id)
+    {
+        $comment = Comment::find($id);
+        $this-&gt;recursiveDestroy($comment);
+
+        if ($request-&gt;ajax()) {
+            return response()-&gt;json('', 204);
+        }
+
+        flash()-&gt;success(trans('forum.deleted'));
+
+        return back();
+    }
+
+    public function recursiveDestroy(Comment $comment)
+    {
+        if ($comment-&gt;replies-&gt;count()) {
+            $comment-&gt;replies-&gt;each(function($reply) {
+                if ($reply-&gt;replies-&gt;count()) {
+                    $this-&gt;recursiveDestroy($reply);
+                } else {
+                    $reply-&gt;delete();
+                }
+            });
+        }
+
+        return $comment-&gt;delete();
+    }
+}</code></pre>
+<p>개인의 취향일 수도 있다. 마이그레이션에서 정의한 <code>$table-&gt;foreign('parent_id')-&gt;references('id')-&gt;on('comments')-&gt;onDelete('cascade');</code> 에 의해 대댓글은 자동 삭제된다. 그런데 필자의 경우에는, 좀 더 안전하게 하기 위해서, 코드 레벨에서 먼저 한번 삭제한다. 이를 위해서, <code>recursiveDestroy()</code> 라는 재귀적 호출을 하는 메소드를 만들었고, <code>destroy()</code> 메소드에서 호출하였다.</p>
+<p>그런데... 댓글을 직접 삭제하는 경우도 있지만, Comment 의 부모 모델인 Article 을 삭제하는 경우도 있다. 우리 모델은 'Morph Many to Many' 라는 것을 기억하자. 즉, 데이터베이스의 외래키 관계가 형성될 수 없다는 의미이다. 그렇다면 Article 모델이 삭제되면 연결된 Comment 도 삭제하도록 코드 레벨에서 구현해야 한다. 그런데 여기서, 디자인 의사 결정이 필요하다. 'Article 이 삭제되었으니, 연결된 그 자식 모델들도 전부 삭제할거냐? 남겨 놓고, '삭제된 글'이라는 자리표시자(== Placeholder) 를 남기고 댓글은 삭제하지 말고 남겨 놓을 것인가?' 의 결정. 여기서는 전부 삭제하는 것으로 하자.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function destroy($id)
+{
+    $article = Article::with('attachments', 'comments')-&gt;findOrFail($id);
+
+    foreach($article-&gt;attachments as $attachment) {
+        \File::delete(attachment_path($attachment-&gt;name));
+    }
+
+    $article-&gt;attachments()-&gt;delete();
+    $article-&gt;comments-&gt;each(function($comment) { // foreach 로 써도 된다.
+        app(\App\Http\Controllers\CommentsController::class)-&gt;recursiveDestroy($comment);
+    });
+    $article-&gt;delete();
+
+    flash()-&gt;success(trans('forum.deleted'));
+
+    return redirect(route('articles.index'));
+}</code></pre>
+<p>이 강좌와 관련된 부분은 <code>$article-&gt;comments-&gt;each(function($comment) {...}</code> 부분인데, <code>app()</code> Helper 로 다른 컨트롤러에 있는 메소드를 접근하고 있다. 사실상은 Anti-pattern 이며, <code>recursiveDestroy()</code> 메소드를 trait 등으로 빼는 것이 좋을 것 같다. </p>
+<h3>화장하기</h3>
+<p>여기까지 작성하고, 브라우저에서 보면 스크린샷 처럼 나오지 않고, 아주 못~쉥긴 댓글 뷰가 표시될 것이다. 아래와 같은 뷰 로직을 생각해 보자.</p>
+<p><img src="./images/40-comments-img-03.png" alt="" /></p>
+<ol>
+<li>최상위 'comments.partial.create' 는 항상 표시된다.</li>
+<li>페이지 로드시 'comments.partial.comment' 에 포함된 현재 댓글 수정 폼, 대댓글 작성 폼은 표시되지 않는다.</li>
+<li>'Reply' 버튼을 클릭하면 해당 댓글 아래에 대댓글 작성 폼이 토글(표시/숨김) 된다. 해당 댓글에 수정 폼이 표시되어 있다면 숨긴다.</li>
+<li>'comments.partial.control' 조각 뷰에서 수정을 선택하면 해당 댓글 수정 폼이 표시된다. 해당 댓글에 대댓글 작성폼이 표시되어 있다면 숨긴다.</li>
+<li>'comments.partial.control' 조각 뷰에서 삭제를 선택하면 해당 댓글 삭제 Ajax 이 나가고, 삭제 성공시 플래시 메시지를 표시한다.</li>
+</ol>
+<p>위 내용을 구현한 CSS, JS 코드인데, 코드에 대한 설명은 생략한다. 일단 jQuery로 썼는데, 이 코스를 통해서 기회가 된다면 <a href="http://vuejs.org/">Vue.js</a> 로 다시 쓸 생각이다. 라라벨과 같은 완벽한 Backend 를 갖추고, 프론트엔드에서 또 다시 AngularJS 와 같은 모든 것을 갖춘 프레임웍을 쓴다는 것은 오버라는 생각이든다 (개발해야 할 코드량이 많다는 의미다). 그런 면에서 뷰 모델만 건드리는 Vue.js 와 같은 라이브러리가 합리적인 선택이라 생각된다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/index.blade.php --&gt;
+
+@section('style')
+  &lt;style&gt;
+    /* 2. 페이지 로드시 'comments.partial.comment' 에 포함된 현재 댓글 수정 폼, 대댓글 작성 폼은 표시되지 않는다. */
+    div.media__create:not(:first-child),
+    div.media__edit {
+      display: none;
+    }
+  &lt;/style&gt;
+@stop
+
+@section('script')
+  &lt;script&gt;
+    $("button.btn__reply").on("click", function(e) {
+      // 3. 'Reply' 버튼을 클릭하면 해당 댓글 아래에 대댓글 작성 폼이 토글(표시/숨김) 된다. 
+      // 해당 댓글에 수정 폼이 표시되어 있다면 숨긴다.
+      var el__create = $(this).closest(".media__item").find(".media__create").first(),
+          el__edit = $(this).closest(".media__item").find(".media__edit").first();
+
+      el__edit.hide("fast");
+      el__create.toggle("fast").end().find('textarea').focus();
+    });
+
+    $("a.btn__edit").on("click", function(e) {
+      // 4. 'comments.partial.control' 조각 뷰에서 수정을 선택하면 해당 댓글 수정 폼이 표시된다. 
+      // 해당 댓글에 대댓글 작성폼이 표시되어 있다면 숨긴다.
+      var el__create = $(this).closest(".media__item").find(".media__create").first(),
+          el__edit = $(this).closest(".media__item").find(".media__edit").first();
+
+      el__create.hide("fast");
+      el__edit.toggle("fast").end().find('textarea').first().focus();
+    });
+
+    $("a.btn__delete").on("click", function(e) {
+      // 5. 'comments.partial.control' 조각 뷰에서 삭제를 선택하면 해당 댓글 삭제 Ajax 이 나가고, 
+      // 삭제 성공시 플래시 메시지를 표시한다.
+      var commentId = $(this).closest(".media__item").data("id");
+
+      if (confirm("Are you sure to delete this comment?")) {
+        $.ajax({
+          type: "POST",
+          url: "/comments/" + commentId,
+          data: {
+            _method: "DELETE"
+          }
+        }).success(function(data) {
+          flash('success', 'Deleted ! The page will reload in 3 secs.', 2500);
+          reload(3000);
+        })
+      }
+    });
+  &lt;/script&gt;
+@stop</code></pre>
+<p>이번 강좌를 진행하는 동안 'resources/assets/js/app.js' 에 자잘한 Cosmetic Change 들이 있었다. 변경 내용들은 Commit 로그를 참고하도록 하자.</p>
+<!--@start-->
+<hr />
+<ul>
+<li><a href="../readme.md">목록으로 돌아가기</a></li>
+<li><a href="39-attachments.md">39강 - Attachment 기능 구현</a></li>
+<li><a href="32n33-auth-refactoring.md">32/33 보충 - 인증 리팩토링</a></li>
+<li><a href="41-ui-makeup.md">41강 - UI 개선</a>
+<!--@end--></li>
+</ul>
+
+          <hr/>
+
+          <nav id="pagination">
+  <ul class="pager pager-bottom">
+    <li class="previous ">
+      <a href="/lessons/32n33-auth-refactoring.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          32/33 보충 - 인증 리...
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/41-ui-makeup.html">
+        <span class="pager-title">
+          41강 - UI 개선
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr class="divider">
+
+          <div class="comments" style="margin-bottom: 30px;">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//l5lessons.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
+</div>              </article>
+
+
+      <!--Disqus here-->
+    </div>
+  </div>
+
+  <div id="toggler">
+    <a href="#" title="Open Menu">
+      목록 토글
+    </a>
+  </div>
+
+  <footer id="footer">
+  <div>
+    &copy; 2016 &nbsp; <a href="https://github.com/appkr">appkr</a> •
+    Built with <a href="http://jigsaw.tighten.co/">Jigsaw</a> •
+    Hosted by <a href="https://pages.github.com/">Github</a> •
+    <a href="/feed.xml">Rss</a>
+  </div>
+</footer>
+
+<div id="back-to-top">
+  <a href="#" title="Scroll to Top">
+    <i class="material-icons">keyboard_arrow_up</i>
+  </a>
+</div>
+  <script src="/js/all.js"></script>
+</body>
+</html>

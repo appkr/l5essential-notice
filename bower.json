@@ -1,0 +1,23 @@
+{
+  "name": "appkr/lessons",
+  "authors": [
+    "appkr <juwonkim@me.com>"
+  ],
+  "license": "MIT",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "_assets",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "fastclick": "~1.0.6",
+    "bootstrap-material-design": "~0.5.7",
+    "ekko-lightbox": "^4.0.1",
+    "moment": "^2.11.2",
+    "highlightjs": "~8.9.1"
+  }
+}

@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="google-site-verification" content=""/>
+  <meta name="naver-site-verification" content=""/>
+
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:author" content="appkr (juwonkim@me.com)"/>
+  <meta property="og:image" content=""/>
+
+  <!-- Google+ Meta -->
+  <meta itemprop="name" content="라라벨 5 입문 및 실전">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="">
+  <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@appkrs"/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:image" content=""/>
+  <meta name="twitter:domain" content="example.com">
+
+  <!-- Mobile and Rss -->
+  <link rel="canonical" href="http://l5.appkr.kr/"/>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <title>라라벨 5 입문 및 실전</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="#app">
+  <nav class="navbar navbar-fixed-top role="navigation">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">
+        <i class="material-icons">school</i>
+        라라벨 5 입문 및 실전
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <aside id="sidebar" class="col-md-3">
+        <ul>
+                      <li  index="0" current-index="44">
+              <a href="/lessons/01-welcome.html">1강 - 처음 만나는 라라벨</a>
+            </li>
+                      <li  index="1" current-index="44">
+              <a href="/lessons/02-hello-laravel.html">2강 - 라라벨 5 설치하기</a>
+            </li>
+                      <li  index="2" current-index="44">
+              <a href="/lessons/02-install-on-windows.html">2강 - 라라벨 5 설치하기 (on Windows)</a>
+            </li>
+                      <li  index="3" current-index="44">
+              <a href="/lessons/03-configuration.html">3강 - 글로벌 설정 살펴보기</a>
+            </li>
+                      <li  index="4" current-index="44">
+              <a href="/lessons/04-routing-basics.html">4강 - Routing 기본기</a>
+            </li>
+                      <li  index="5" current-index="44">
+              <a href="/lessons/05-pass-data-to-view.html">5강 - 뷰에 데이터 바인딩하기</a>
+            </li>
+                      <li  index="6" current-index="44">
+              <a href="/lessons/06-blade-101.html">6강 - 블레이드 101</a>
+            </li>
+                      <li  index="7" current-index="44">
+              <a href="/lessons/07-blade-201.html">7강 - 블레이드 201</a>
+            </li>
+                      <li  index="8" current-index="44">
+              <a href="/lessons/08-raw-queries.html">8강 - 날 쿼리 :(</a>
+            </li>
+                      <li  index="9" current-index="44">
+              <a href="/lessons/09-query-builder.html">9강 - 쿼리 빌더</a>
+            </li>
+                      <li  index="10" current-index="44">
+              <a href="/lessons/10-eloquent.html">10강 - 엘로퀀트 ORM</a>
+            </li>
+                      <li  index="11" current-index="44">
+              <a href="/lessons/11-migration.html">11강 - DB 마이그레이션</a>
+            </li>
+                      <li  index="12" current-index="44">
+              <a href="/lessons/12-controller.html">12강 - 컨트롤러</a>
+            </li>
+                      <li  index="13" current-index="44">
+              <a href="/lessons/13-restful-resource-controller.html">13강 - RESTful 리소스 컨트롤러</a>
+            </li>
+                      <li  index="14" current-index="44">
+              <a href="/lessons/14-named-routes.html">14강 - 이름 있는 Route</a>
+            </li>
+                      <li  index="15" current-index="44">
+              <a href="/lessons/15-nested-resources.html">15강 - 중첩된 리소스</a>
+            </li>
+                      <li  index="16" current-index="44">
+              <a href="/lessons/16-authentication.html">16강 - 사용자 인증 기본기</a>
+            </li>
+                      <li  index="17" current-index="44">
+              <a href="/lessons/17-authentication-201.html">17강 - 라라벨에 내장된 사용자 인증</a>
+            </li>
+                      <li  index="18" current-index="44">
+              <a href="/lessons/18-eloquent-relationships.html">18강 - 모델간 관계 맺기</a>
+            </li>
+                      <li  index="19" current-index="44">
+              <a href="/lessons/19-seeder.html">19강 - 데이터 심기</a>
+            </li>
+                      <li  index="20" current-index="44">
+              <a href="/lessons/20-eager-loading.html">20강 - Eager 로딩</a>
+            </li>
+                      <li  index="21" current-index="44">
+              <a href="/lessons/20-1-pagination.html">추가 - 페이징</a>
+            </li>
+                      <li  index="22" current-index="44">
+              <a href="/lessons/21-mail.html">21강 - 메일 보내기</a>
+            </li>
+                      <li  index="23" current-index="44">
+              <a href="/lessons/22-events.html">22강 - 이벤트</a>
+            </li>
+                      <li  index="24" current-index="44">
+              <a href="/lessons/23-validation.html">23강 - 입력 값 유효성 검사</a>
+            </li>
+                      <li  index="25" current-index="44">
+              <a href="/lessons/24-exception-handling.html">24강 - 예외 처리</a>
+            </li>
+                      <li  index="26" current-index="44">
+              <a href="/lessons/25-composer.html">25강 - 컴포저</a>
+            </li>
+                      <li  index="27" current-index="44">
+              <a href="/lessons/26-document-model.html">26강 - Document 모델</a>
+            </li>
+                      <li  index="28" current-index="44">
+              <a href="/lessons/27-document-controller.html">27강 - Document 컨트롤러</a>
+            </li>
+                      <li  index="29" current-index="44">
+              <a href="/lessons/28-cache.html">28강 - Cache</a>
+            </li>
+                      <li  index="30" current-index="44">
+              <a href="/lessons/29-elixir.html">29강 - Elixir, 만병통치약?</a>
+            </li>
+                      <li  index="31" current-index="44">
+              <a href="/lessons/30-final-touch.html">30강 - Debug &amp; Final Touch</a>
+            </li>
+                      <li  index="32" current-index="44">
+              <a href="/lessons/31-forum-features.html">31강 - 포럼 요구사항 기획</a>
+            </li>
+                      <li  index="33" current-index="44">
+              <a href="/lessons/32-login.html">32강 - 사용자 로그인</a>
+            </li>
+                      <li  index="34" current-index="44">
+              <a href="/lessons/33-social-login.html">33강 - 소셜 로그인</a>
+            </li>
+                      <li  index="35" current-index="44">
+              <a href="/lessons/34-role.html">34강 - 사용자 역할</a>
+            </li>
+                      <li  index="36" current-index="44">
+              <a href="/lessons/35-locale.html">35강 - 다국어 지원</a>
+            </li>
+                      <li  index="37" current-index="44">
+              <a href="/lessons/36-models.html">36강 - 마이그레이션과 모델</a>
+            </li>
+                      <li  index="38" current-index="44">
+              <a href="/lessons/37-articles.html">37강 - Article 기능 구현</a>
+            </li>
+                      <li  index="39" current-index="44">
+              <a href="/lessons/38-tags.html">38강 - Tag 기능 구현</a>
+            </li>
+                      <li  index="40" current-index="44">
+              <a href="/lessons/39-attachments.html">39강 - Attachment 기능 구현</a>
+            </li>
+                      <li  index="41" current-index="44">
+              <a href="/lessons/32n33-auth-refactoring.html">32/33 보충 - 인증 리팩토링</a>
+            </li>
+                      <li  index="42" current-index="44">
+              <a href="/lessons/40-comments.html">40강 - Comment 기능 구현</a>
+            </li>
+                      <li  index="43" current-index="44">
+              <a href="/lessons/41-ui-makeup.html">41강 - UI 개선</a>
+            </li>
+                      <li class="active" index="44" current-index="44">
+              <a href="/lessons/42-be-makeup.html">42강 - 서버 사이드 개선</a>
+            </li>
+                      <li  index="45" current-index="44">
+              <a href="/lessons/43-change-note.html">43강 - 변경 사항 알림</a>
+            </li>
+                      <li  index="46" current-index="44">
+              <a href="/lessons/44-api-basic.html">44강 - API 기본기 및 기획</a>
+            </li>
+                      <li  index="47" current-index="44">
+              <a href="/lessons/45-api-big-picture.html">45강 - 기본 구조 잡기</a>
+            </li>
+                      <li  index="48" current-index="44">
+              <a href="/lessons/46-jwt.html">46강 - JWT 를 이용한 인증</a>
+            </li>
+                      <li  index="49" current-index="44">
+              <a href="/lessons/47-dry-refactoring.html">47강 - 중복 제거 리팩토링</a>
+            </li>
+                      <li  index="50" current-index="44">
+              <a href="/lessons/48-all-is-bad.html">48강 - all() is bad</a>
+            </li>
+                      <li  index="51" current-index="44">
+              <a href="/lessons/49-rate-limit.html">49강 - API Rate Limit</a>
+            </li>
+                      <li  index="52" current-index="44">
+              <a href="/lessons/50-id-obfuscation.html">50강 - 리소스 id 난독화</a>
+            </li>
+                      <li  index="53" current-index="44">
+              <a href="/lessons/51-cors.html">51강 - CORS</a>
+            </li>
+                      <li  index="54" current-index="44">
+              <a href="/lessons/52-caching.html">52강 - Caching</a>
+            </li>
+                      <li  index="55" current-index="44">
+              <a href="/lessons/53-partial-response.html">53강 - Partial Response</a>
+            </li>
+                      <li  index="56" current-index="44">
+              <a href="/lessons/54-api-docs.html">54강 - API Documents</a>
+            </li>
+                      <li  index="57" current-index="44">
+              <a href="/lessons/02-install-homestead-osx.html">Homestead 설치 (on Mac)</a>
+            </li>
+                      <li  index="58" current-index="44">
+              <a href="/lessons/02-install-homestead-windows.html">Homestead 설치 (on Windows)</a>
+            </li>
+                      <li  index="59" current-index="44">
+              <a href="/lessons/999-code-release.html">코드 배포</a>
+            </li>
+                  </ul>
+      </aside>
+
+      <article id="article" class="col-md-9">
+                  <nav id="pagination">
+  <ul class="pager pager-top">
+    <li class="previous ">
+      <a href="/lessons/41-ui-makeup.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          41강 - UI 개선
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/43-change-note.html">
+        <span class="pager-title">
+          43강 - 변경 사항 알...
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr/>
+
+          <h1>실전 프로젝트 2 - Forum</h1>
+<h2>42강 - 서버 사이드 개선</h2>
+<p>아직 추가해야 할 기능들이 많지만, 이번 강으로 실전 프로젝트 2편은 마무리하기로 한다. 먼저 무엇을 개선할 지 리스트업하자.</p>
+<ol>
+<li>포럼에서 필터, 풀텍스트 검색, 정렬 기능을 제공한다.</li>
+<li>응답 성능 향상을 위해, 서버 사이드 캐싱을 활성화한다. <code>event:generate</code> 코맨드 이용한다.</li>
+<li>포럼에 댓글, 또는 댓글에 대댓글이 달릴 경우, 원본 글 작성자에게 이메일 알림을 발송한다. 이벤트를 수동으로 만들 것이다.</li>
+<li>서비스 디렉토리를 만들고, 기존 Markdown 컴파일러를 상속하여, 커스텀 컴파일 규칙을 만든다.</li>
+<li>앞 강에서 누락된 베스트 답글을 선택하고 표시하는 기능을 추가할 것이다.</li>
+</ol>
+<h3>필터, 풀 텍스트 검색, 정렬 기능</h3>
+<p>3가지 기능 모두가 <code>ArticlesController::index()</code> 와 관련이 있어 한번에 설명하기로 한다. 주목할 점은 필터를 적용하면 필터가 적용된 포럼 글만 표시된다. 풀 텍스트 검색을 적용하면 검색어에 해당하는 포럼 글만 표시된다. 반면, 정렬은 페이지에 표시할 포럼 콜렉션 자체를 변경하지는 않으며, 필터나 검색에 의해 선택된 포럼 콜렉션의 오름차순, 내림차순 정렬, 즉 Decoration만 하는 역할을 한다는 점을 기억하자. </p>
+<p>2가지 필터. 필터 추가는 독자들이 얼마든지 할 수 있을 것이다. URL 쿼리의 필드명은 'f' 로 하자. (e.g. f=nocomment)</p>
+<ul>
+<li><code>nocomment</code>: 댓글이 없는 포럼 글</li>
+<li><code>notsolved</code>: 베스트 답글이 없는 포럼 글</li>
+</ul>
+<p>2가지 정렬 기준. URL 쿼리에서 's' 는 정렬할 기준 필드, 'd' 는 정렬방향으로 사용자에게 받는 걸로 하자. (e.g. s=created_at&amp;d=asc)</p>
+<ul>
+<li><code>created_at</code> 필드에 의한 정렬. Age 라 칭하자.</li>
+<li><code>view_count</code> 필드에 의한 정렬. View 라 칭하자.</li>
+</ul>
+<p><strong><code>참고</code></strong> 간단해서 설명은 생략했지만, 포럼 상세보기 (<code>ArticlesController::show()</code>) 가 페이지 노출되었을 때 'view_count' 를 올리는 로직을 본 강좌에서 추가하였다.</p>
+<h4>UI 구현</h4>
+<p>기존의 'layouts.partial.search' 에 작성했던 검색 폼을 'articles.partial.search' 로 이동하였다. 기존 대비 폼에 action 속성이 추가되었고, 폼 전송을 하면 GET /articles?s=키워드 요청이 발생하며, 이는 <code>ArticlesController::index()</code> 에서 처리된다. 검색 키워드를 담고 폼을 통해 전송되는 필드 이름이 'q' 라는 것을 기억하자.  </p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/partial/search.blade.php --&gt;
+
+&lt;form action="{{ route('articles.index') }}" method="get" role="search" id="search__forum"&gt;
+  &lt;input type="text" name="q" value="{{ Request::input('q') }}" class="form-control" placeholder="Search"/&gt;
+&lt;/form&gt;</code></pre>
+<p>필터 목록을 표시할 UI를 추가하였다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/tags/partial/index.blade.php --&gt;
+
+&lt;!-- Tags list here ... --&gt;
+
+&lt;p class="lead"&gt;
+  {!! icon('filter') !!} Filters
+&lt;/p&gt;
+&lt;ul class="list-unstyled"&gt;
+  @foreach(['nocomment' =&gt; 'No Comment', 'notsolved' =&gt; 'Not Solved'] as $filter =&gt; $name)
+    &lt;li class="{{ (Request::input('f') == $filter) ? 'active' : '' }}"&gt;
+      &lt;a href="{{ route('articles.index', ['f' =&gt; $filter]) }}"&gt;
+        {{ $name }}
+      &lt;/a&gt;
+    &lt;/li&gt;
+  @endforeach
+&lt;/ul&gt;</code></pre>
+<p>포럼 목록 보기에서 정렬 UI 를 추가하였다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/index.blade.php --&gt;
+
+&lt;div class="btn-group pull-right sort__forum"&gt;
+  &lt;button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"&gt;
+    {!! icon('sort') !!} Sort by &lt;span class="caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" role="menu"&gt;
+    @foreach(['created_at' =&gt; 'Age', 'view_count' =&gt; 'View'] as $column =&gt; $name)
+      &lt;li class="{{ Request::input('s') == $column ? 'active' : '' }}"&gt;{!! link_for_sort($column, $name) !!}&lt;/li&gt;
+    @endforeach
+  &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+<p>위 뷰에서 정렬 링크를 생성하기 위해 <code>link_for_sort()</code> 라는 함수를 추가했는데 본문보다 코드에 설명하는 것이 더 효율적이라 생각되어, 코드 중간중간에 주석을 달았다. </p>
+<pre><code class="language-php">// app/helpers.php
+
+function link_for_sort($column, $text, $params = [])
+{
+    // 현재 요청의 'd' 쿼리 파라미터가 asc 이면, $reverse 에 desc
+    $direction = Request::input('d');
+    $reverse = ($direction == 'asc') ? 'desc' : 'asc';
+
+    // 정렬을 위한 쿼리 파라미터(s) 의 값이 있으면,
+    // 오름차순 또는 내림차순 아이콘을 함수의 인자로 넘겨 받은 $text 에 붙인다. 
+    if (Request::input('s') == $column) {
+        $text = sprintf(
+            "%s %s",
+            $direction == 'asc' ? icon('asc') : icon('desc'),
+            $text
+        );
+    }
+
+    // 현재 요청의 쿼리 스트링에서 'page', 's', 'd' 등을 제외한 나머지 쿼리 스트링과
+    // 이 함수의 인자로 넘겨 받은 값들로 생성한 's', 'd' 등의 쿼리 스트링을 합쳐서
+    // Anchor 태그의 href 속성 값에서 사용할 $queryString 생성한다.
+    $queryString = http_build_query(array_merge(
+        Input::except(['page', 's', 'd']),
+        ['s' =&gt; $column, 'd' =&gt; $reverse],
+        $params
+    ));
+
+    // 현재 요청 URL 을 Request::url() 로 얻어 오고,
+    // 앞에서 만든 $queryString 문자열을 합쳐서 완전한 HTML &lt;a&gt; 태그를 생성한다. 
+    return sprintf(
+        '&lt;a href="%s?%s"&gt;%s&lt;/a&gt;',
+        urldecode(Request::url()),
+        $queryString,
+        $text
+    );
+} </code></pre>
+<p>위 함수에서 선택된 정렬 링크를 한번 더 선택하면, 오름차순, 내림차순 간에 토글된다. 물론, 아이콘도 같이 변경된다.</p>
+<h4>마이그레이션</h4>
+<p><a href="https://dev.mysql.com/doc/refman/5.6/en/fulltext-boolean.html">MySql 공식 문서</a>를 이용하여 MySql 네이티브 풀텍스트 검색을 구현하기로 한다. 이를 위해 기존 마이그레이션을 약간 수정해야 한다.</p>
+<pre><code class="language-php">// database/migrations/create_articles_table.php
+
+class CreateArticlesTable extends Migration
+{
+    public function up()
+    {
+        Schema::create('articles', function (Blueprint $table) { // ... });
+
+        DB::statement('ALTER TABLE articles ADD FULLTEXT search(title, content)');
+    }
+
+    // ...
+}</code></pre>
+<p>마이그레이션을 실행한다.</p>
+<pre><code class="language-bash">$ php artisan migrate:refresh --seed</code></pre>
+<h4>컨트롤러 구현</h4>
+<p><code>index()</code> 메소드 안에 필터, 검색, 정렬 로직을 넣으면 길어져서 <code>filter()</code> 란 메소드로 빼내었다. 이번에도 코드에서 주석으로 설명한다.</p>
+<p><strong><code>참고</code></strong> 라라벨 커뮤니티에서는 비즈니스 로직과 데이터 소스를 디커플링시키고, 코드의 재활용성을 높이기 위해서 <a href="https://github.com/domnikl/DesignPatternsPHP/tree/master/More/Repository">Repository Pattern</a> 을 많이 사용한다. <code>filter()</code> 메소드와 같은 내용들은 Repository 로 옮겨져서 다른 클래서에서도 사용할 수 있도록 하면 좋을 것이다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+class ArticlesController extends Controller
+{
+    public function index(FilterArticlesRequest $request, $id = null)
+    {
+        $query = $id
+            ? Tag::findOrFail($id)-&gt;articles()
+            : new Article;
+
+        $query = $query-&gt;with('comments', 'author', 'tags', 'solution', 'attachments');
+        $articles = $this-&gt;filter($request, $query)-&gt;paginate(10);
+
+        return view('articles.index', compact('articles'));
+    }
+
+    protected function filter($request, $query)
+    {
+        if ($filter = $request-&gt;input('f')) {
+            // 'f' 쿼리 스트링 필드가 있으면, 그 값에 따라 쿼리를 분기한다.
+            switch ($filter) {
+                case 'nocomment':
+                    $query-&gt;noComment();
+                    break;
+                case 'notsolved':
+                    $query-&gt;notSolved();
+                    break;
+            }
+        }
+
+        if ($keyword = $request-&gt;input('q')) {
+            // 이번에도 'q' 필드가 있으면 풀텍스트 검색 쿼리를 추가한다.
+            $raw = 'MATCH(title,content) AGAINST(? IN BOOLEAN MODE)';
+            $query-&gt;whereRaw($raw, [$keyword]);
+        }
+
+        // 's' 필드가 있으면 사용하고, 없으면 created_at 을 기본값으로 사용한다.
+        $sort = $request-&gt;input('s', 'created_at');
+        // 'd' 필드가 있으면 사용하고, 없으면 desc 를 기본값으로 사용한다.
+        $direction = $request-&gt;input('d', 'desc');
+
+        return $query-&gt;orderBy($sort, $direction);
+    }
+
+    // Other codes ...
+}</code></pre>
+<p>컨트롤러 구현 중에 좀 더 가독성 높은 쿼리를 위해, Article 모델에 아래 2개의 쿼리스코프를 추가하였다.</p>
+<pre><code class="language-php">// app/Article.php
+
+class Article extends Model
+{
+    public function scopeNoComment($query)
+    {
+        return $query-&gt;has('comments', '&lt;', 1);
+    }
+
+    public function scopeNotSolved($query)
+    {
+        return $query-&gt;whereNull('solution_id');
+    }
+}</code></pre>
+<p><code>ArticlesController::index()</code> 에서 <code>FilterArticlesRequest</code> 란 Form Request 를 받는다. 이는 브라우저의 주소표시줄을 통해 사용자의 눈에도 보이는 HTTP GET 쿼리 스트링을 통해서, 'f', 's', 'd' 등의 필드 값이 전달되기 때문에, 서비스에서 허용하지 않는 문자열이 들어오는 것을 막기 위한 조치이다.</p>
+<pre><code class="language-php">// app/Http/Requests/FilterArticlesRequest.php
+
+class FilterArticlesRequest extends Request
+{
+    public function rules()
+    {
+        return [
+            'f' =&gt; 'in:nocomment,notsolved',   // filter
+            's' =&gt; 'in:created_at,view_count', // Sort: Age(created_at), View(view_count)
+            'd' =&gt; 'in:asc,desc',              // Direction: Ascending or Descending
+            'q' =&gt; 'alpha_dash',               // Search query
+        ];
+    }
+}</code></pre>
+<p>컨트롤러 코드에서 풀텍스트 검색을 위해 <code>whereRaw()</code> 란 날 SQL을 쓸 수 있는 메소드를 이용하였고, 특수한 MySql 쿼리를 이용하였다. 쿼리는 앞서 언급한 <a href="https://dev.mysql.com/doc/refman/5.6/en/fulltext-boolean.html">MySql 공식 문서</a>를 참고하였다.</p>
+<p><strong><code>참고</code></strong> 여기서는 MySql 네이티브 풀텍스트 검색을 이용했지만, 데이터베이스 엔진의 의존성을 버리고 빠른 성능을 달성하기 위해서는 <a href="https://www.elastic.co/downloads/elasticsearch">Elastic Search</a> 등을 검토해 보기 바란다.</p>
+<p><img src="./images/42-be-makeup-img-01.png" alt="" /></p>
+<h3>캐시</h3>
+<h4>동작 원리</h4>
+<p>아래와 같은 원리로 동작할 것이다. () 안에 포함된 내용은 'file', 'database' 캐시에는 적용되지 않는다.</p>
+<ul>
+<li><code>ArticlesController::index()</code> 에서 Article 모델의 콜렉션을 캐시에 ('xxx' 라는 태그로) 저장한다.</li>
+<li>신규 Article 모델의 생성, 기존 모델의 수정 또는 삭제시 이벤트를 던져 ('xxx' 태그를 가진) 캐시를 삭제한다.</li>
+</ul>
+<h4>도우미 패키지 설치</h4>
+<p>라라벨의 캐시 기능을 좀 더 편리하게 사용하기 위해서 <a href="https://github.com/dwightwatson/rememberable">watson/rememberable</a> 패키지를 가져와서 사용할 것이다. 라라벨 4 버전에 있다가 5 버전에서 빠진 기능이다.</p>
+<pre><code class="language-bash">$ composer require watson/rememberable</code></pre>
+<p>이 패키지는 <code>Watson\Rememberable\Rememberable</code> 이란 Trait를 제공하는데, Model 에서 use 키워드로 활성화시켜 주면, <code>remember(\DateTime|int $minutes)</code> 란 메소드에 접근할 수 있다. 모든 모델에서 앞서 언급한 Trait 를 써주는 것은 피곤하기도 하거니와, 코드 구조화 측면에서 추상 모델 클래스 (abstract Model) 를 하나 만들고, 우리 프로젝트의 모델들은 이 추상 모델을 상속 받도록 하자. 이 추상 모델은 Eloquent 를 상속 받을 것이다.</p>
+<pre><code class="language-php">// app/Mode.php
+
+&lt;?php
+
+namespace App;
+
+use Illuminate\Database\Eloquent\Model as Eloquent;
+use Watson\Rememberable\Rememberable;
+
+abstract class Model extends Eloquent
+{
+    use Rememberable;
+}</code></pre>
+<p>원래 'Article.php' 에 있던 <code>use Illuminate\Database\Eloquent\Model</code> 선언이 'Model.php' 로 이동한 것을 확인하자. </p>
+<pre><code class="language-php">// app/Article.php
+
+&lt;?php
+
+namespace App;
+
+class Article extends Model { // ... }</code></pre>
+<h4>컨트롤러에서 캐시 기능 활성화</h4>
+<p><code>remember()</code> 메소드는 분 단위로 지정된 캐시의 수명을 인자로 받게 되어 있다. 5분이라고 지정했다. </p>
+<p><code>with()</code> 메소드 바로 뒤에 <code>remember()</code> 메소드를 체인했는데, 이는 Eager Loading 된 관계를 포함하여 모든 Article 콜렉션을 캐시에 저장한다는 의미이다. </p>
+<p><a href="http://laravel.com/docs/cache#cache-tags">캐시 태그</a> 는 캐시 키에 대한 별칭이라고 볼 수 있다. 가령, 'dogs' 란 캐시 키를 지정하고, 'animals' 란 캐시 태그를 지정한 후, 'animals' 태그에 속하는 모든 캐시를 한방에 지울 수 있다. 주의할 점은 <code>remember()</code> 메소드와 결합되었을 때는 <code>tags()</code> 메소드 대신 <code>cacheTags(string|array $cacheTags)</code> 를 사용하여야 한다는 점이다.</p>
+<p><a href="http://laravel.com/docs/cache#cache-tags">캐시 태그</a> 를 쓸 때 또 하나 주의할 점은, 'file', 'database' 캐시 드라이버에서는 태그를 쓸 수 없다는 점이다. 아래 코드에서 <code>taggable()</code> Helper 가 태그 사용 가능성을 체크해 준다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+class ArticlesController extends Controller
+{
+    public function index(FilterArticlesRequest $request, $id = null)
+    {
+        $query = $id
+            ? Tag::findOrFail($id)-&gt;articles()
+            : new Article;
+
+        $query = taggable()
+            ? $query-&gt;with('comments', 'author', 'tags', 'attachments')-&gt;remember(5)-&gt;cacheTags('articles')
+            : $query-&gt;with('comments', 'author', 'tags', 'solution', 'attachments')-&gt;remember(5);
+
+        // ...
+    }
+}</code></pre>
+<p>앞서 언급한 <code>taggable()</code> Helper 는 'config/cache.php' 를 읽어 와서, default 드라이버가 'file' 또는 'database' 인지를 체크한다.</p>
+<pre><code class="language-php">// app/helpers.php
+
+function taggable()
+{
+    return !in_array(config('cache.default'), ['file', 'database']);
+}</code></pre>
+<h4>캐시 삭제 이벤트</h4>
+<p>모델에 변경 사항이 있을 때 이벤트를 던져, 지정된 태그의 캐시만 비울 것이다. 앞서 설명했듯이, 캐시 태그 기능은 'file', 'database' 캐시 드라이버에서 지원되지 않으므로, 캐시 전체를 비우는 식으로 구현할 것이다.</p>
+<p>모델에 변경이 발생하는 <code>store()</code>, <code>update()</code>, <code>destroy()</code> 메소드에서 각각 이벤트를 던져야 한다. <code>ModelChanged</code> 라고 이름 지었고, 이벤트 데이터로 지워야 할 태그의 리스트를 전달하였다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+class ArticlesController extends Controller
+{
+    public function store(ArticlesRequest $request)
+    {
+        // ...
+        event(new ModelChanged(['articles', 'tags']));
+    }
+
+    // ...
+}</code></pre>
+<p><a href="22-events.md">22강 - 이벤트</a> 에서 배운 내용과는 다른 방법을 이용할 것이다. </p>
+<p>이벤트 이름과, 리스너 이름을 먼저 정한다. 이벤트 이름은 앞서 컨트롤러에서 <code>ModelChanged</code> 로 정했고, 리스너는 <code>CacheHandler</code> 로 정했다.</p>
+<pre><code class="language-php">// app/Prividers/EventServiceProvider.php
+
+class EventServiceProvider extends ServiceProvider
+{
+    protected $listen = [
+        \App\Events\ModelChanged::class =&gt; [
+            \App\Listeners\CacheHandler::class
+        ],
+    ];
+
+    // ...
+}</code></pre>
+<p>artisal CLI 로 이벤트 클래스와 리스너 클래스를 만든다. 'app/Events/ModelChanged.php' 와 'app/Listeners/CacheHandler.php' 파일이 만들어 진 것을 확인하자.</p>
+<pre><code class="language-bash">$ php artisan event:generate</code></pre>
+<p>이벤트 클래스는 단순한 DTO (== <a href="https://en.wikipedia.org/wiki/Data_transfer_object">Data Transfer Object</a>) 로 클래스간 데이터를 주고 받기 위한 매개체이다. 해서, DTO의 클래스 변수들은 모두 public 으로 주어야 한다는 것을 주의하자.</p>
+<pre><code class="language-php">// app/Events/ModelChanged.php
+
+&lt;?php
+
+namespace App\Events;
+
+use Illuminate\Queue\SerializesModels;
+
+class ModelChanged extends Event
+{
+    use SerializesModels;
+
+    public $cacheTags;
+
+    public function __construct($cacheTags)
+    {
+        $this-&gt;cacheTags = $cacheTags;
+    }
+}</code></pre>
+<p>리스너도 별 것 없다. <code>EventServiceProvider</code> 의 <code>$listen</code> 속성에서 이벤트에 연결된 리스너의 <code>handle()</code> 메소드를 기본적으로 호출하게 되어있고, 이 메소드에는 이벤트 객체를 인자로 넘겨 주게 되어 있다. </p>
+<p><code>ModelChanged</code> 객체를 넘겨 받았으므로, 위헤서 정의한 <code>$cacheTags</code> 변수에 쉽게 접근할 수 있다. <code>taggable()</code> Helper 로 태그 기능이 없으면, 캐시 전체를 삭제하고 Early Return 을 하도록 하자.</p>
+<pre><code class="language-php">// app/Listeners/CacheHandler.php
+
+&lt;?php
+
+namespace App\Listeners;
+
+use App\Events\ModelChanged;
+
+class CacheHandler
+{
+    public function handle(ModelChanged $event)
+    {
+        if (! taggable()) {
+            // Remove all cache store
+            return \Cache::flush();
+        }
+
+        // Remove only cache that has the given tag(s)
+        return \Cache::tags($event-&gt;cacheTags)-&gt;flush();
+    }
+}</code></pre>
+<blockquote>
+<p><strong><code>참고</code></strong> memcached 사용 관련...
+필자의 경우, memcache 사용을 위하여 'memcached(system library)', 'php-memcached(php module)' 을 모두 설치해 주어야 했다.
+memcached 를 사용하려면 .env.php 에서 CACHE_DRIVER=memcached 로 수정하고, 아래 설치 및 실행 명령을 참고하자.</p>
+</blockquote>
+<pre><code class="language-bash"># Linux
+$ sudo apt-get install memcached php5-memcached
+# Mac OS
+$ brew install memcached homebrew/php/php5x-memcached
+# Run as daemon mode
+$ memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211</code></pre>
+<p><strong><code>완전 잡담</code></strong> 가령, <code>Article::with('...')-&gt;where('...')-&gt;get()</code> 쿼리를 할 때, <code>with()</code> 가 붙는 순간 <code>Illuminate\Database\Eloquent\Builder</code> 인스턴스로 변하고, <code>get()</code> 으로 최종 결과값을 가져오면 <code>Illuminate\Database\Eloquent\Collection</code> 인스턴스가 된다.  </p>
+<h3>이메일 알림</h3>
+<p>별로 어렵지 않은데, 앞 전의 이벤트와 약간 다른 방식으로 이벤트와 핸들러를 등록할 것이다.</p>
+<pre><code class="language-php">// app/Providers/EventServiceProvider.php
+
+class EventServiceProvider extends ServiceProvider
+{
+    // ...
+
+    public function boot(DispatcherContract $events)
+    {
+        parent::boot($events);
+        $events-&gt;listen('comments.*', \App\Listeners\CommentsHandler::class);
+    }
+}    </code></pre>
+<p><a href="22-events.md">22강 - 이벤트</a> 에서 배운 내용과 유사하다. 다만, <code>listen()</code> 메소드를 쓴 위치만, 글로벌 routes.php 에서 위 파일로 옮겨졌을 뿐이다. 'comments.*' 는 예상한대로, 'comments.' 로 시작하는 모든 이벤트를 <code>\App\Listeners\CommentsHandler::handle()</code> 로 연결시키겠다는 의미이다.</p>
+<p>아래는 이벤트 핸들러 구현인데, 이메일을 보내는 일반적인 구현이다. 특이할만한 점은 <code>$comment-&gt;commentable()</code> 메소드를 이용하여 Comment 에 연결된 Article 객체를 가져와서 <code>author-&gt;email</code> 을 접근했다는 부분과, Comment 자신의 부모 Comment 의 <code>author-&gt;email</code> 도 같이 가져와서, 수신자에서 중복을 제거하고 메일을 발송하고 있다는 점이다.</p>
+<p>'emails.new-comment' 뷰는 설명을 생략한다.</p>
+<pre><code class="language-php">// app/Listeners/CommentsHandler.php
+
+&lt;?php
+
+namespace App\Listeners;
+
+use App\Comment;
+
+class CommentsHandler
+{
+    public function handle(Comment $comment)
+    {
+        $to[] = $comment-&gt;commentable-&gt;author-&gt;email;
+
+        if ($comment-&gt;parent) {
+            $to[] = $comment-&gt;parent-&gt;author-&gt;email;
+        }
+
+        $to = array_unique($to);
+        $subject = 'New comment';
+
+        return \Mail::send('emails.new-comment', compact('comment'), function($m) use($to, $subject) {
+            $m-&gt;to($to)-&gt;subject($subject);
+        });
+    }
+}</code></pre>
+<h3>Markdown 컴파일러 확장</h3>
+<p><a href="25-composer.md">25강 - 컴포저</a> 에서 가져온 <code>ParsedownExtra</code> 클래스를 이용하여, 사용자가 마크다운으로 작성한 포럼 글을 다시 보여줄 때 잘 사용하고 있었다. </p>
+<p>그런데, 갑자기 새로운 요구사항이 생겼다고 가정하자. 'a#포럼글id' 또는 'article#포럼글id' 식으로 마크다운 본문을 쓰면, 자동으로 해당 id로 이동하는 링크를 제공해야 한다고 하자.</p>
+<p>먼저, <code>ParsedownExtra</code> 상속받아 이 프로젝트만의 <code>Markdown</code> 클래스를 만들고, 여기에 해당 로직을 녹여 넣도록 하자. <code>preg_*()</code> 함수는 PHP 내장함수로 사용법에 대한 설명은 공식 문서를 참고하기 바란다. 다만, <code>public function text($text)</code> 의 마지막 줄 <code>return parent::text($text);</code> 에서 넘겨 받은 raw 문자열에서 필요한 컴파일 작업을 먼저 수행하여 얻은 결과물을 부모 클래스로 넘겨 데코레이션한 부분은 눈여겨 볼만하다. </p>
+<pre><code class="language-php">// app/Services/Markdown.php
+
+&lt;?php
+
+namespace App\Services;
+
+use ParsedownExtra;
+
+class Markdown extends ParsedownExtra {
+
+    const PATTERN_ARTICLE = '/(article|a)\#(?P&lt;id&gt;\d+)/i';
+
+    public function text($text) {
+        if (preg_match(self::PATTERN_ARTICLE, $text, $matches) &gt; 0) {
+            $text = preg_replace_callback(self::PATTERN_ARTICLE, function ($matches) {
+                return sprintf(
+                    "&lt;a href='%s'&gt;%s&lt;/a&gt;",
+                    route('articles.show', $matches['id']),
+                    $matches[0]
+                );
+            }, $text);
+        }
+
+        return parent::text($text);
+    }
+}</code></pre>
+<h3>베스트 답글 선택 구현</h3>
+<h4>UI 구성</h4>
+<p>포럼 상세 보기 본문에 베스트 답글(== 댓글)이 있으면, 표시하도록 하였다.</p>
+<p>또, 댓글 뷰를 <code>@include</code> 할 때, <code>$solved</code>, <code>$owner</code> 란 새로운 변수도 넘겨 주도록 하였다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/show.blade.php --&gt;
+
+&lt;div class="col-md-9"&gt;
+  &lt;article id="article__article" data-id="{{ $article-&gt;id }}"&gt;
+    &lt;!-- ... --&gt;
+    @if ($article-&gt;solution)
+      @include('comments.partial.best', ['comment' =&gt; $article-&gt;solution])
+    @endif
+  &lt;!-- ... --&gt;
+
+  &lt;article&gt;
+    @include('comments.index', [
+      'solved' =&gt; $article-&gt;solution,
+      'owner'  =&gt; $currentUser &amp;&amp; $article-&gt;isAuthor()
+    ])
+  &lt;/article&gt;
+&lt;/div&gt;</code></pre>
+<p>'comments.partial.best' 뷰는 특별한 내용이 없으므로 생략한다.</p>
+<p>포럼 글에 대해서 베스트 댓글이 없으면, 포럼 글 작성자가 베스트를 선택할 수 있도록 UI를 제공해야 한다. 'articles.show' 뷰에서 넘겨 받은, <code>$solved</code>, <code>$owner</code> 변수를 활용하고 있는 것을 확인할 수 있다.</p>
+<p>아래에서 <code></code> 란 블레이드 문법에 주목하자. 이는 부모 뷰에 동일한 이름의 <code>@section</code> 정의가 있으면, 둘을 합쳐서 <code>@yield</code> 할 수 있게 해 준다. 가령, 'comments.partial.commnet' 뷰에 <code>@section('script')</code> 가 있고, 부모 뷰인 'comments.index' 에도 <code>@section('script')</code> 가 있다면, <code></code> 키워드를 포함하지 않으면, 일반적인 클래스 상속과 동일하게 자식뷰의 섹션이 부모뷰를 오버라이드해 버린다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/comments/partial/comment.blade.php --&gt;
+
+@if ($currentUser)
+&lt;p class="text-right" style="margin-top: 1rem;"&gt;
+  @if (! $solved &amp;&amp; $owner)
+    &lt;button type="button" class="btn btn-default btn-sm btn__pick" title="Pick as the Best Answer"&gt;
+      {!! icon('pick', false) !!}
+    &lt;/button&gt;
+  @endif
+  &lt;!-- Reply button here ... --&gt;
+&lt;/p&gt;
+@endif
+
+@section('script')
+  
+  &lt;script&gt;
+    // Other javascript codes ...
+    $("button.btn__pick").on("click", function(e) {
+      var articleId = $("#article__article").data("id"),
+          commentId = $(this).closest(".media__item").data("id");
+
+      if (confirm("Are you sure to select this comment as the 'Best'?")) {
+        $.ajax({
+          type: "POST",
+          url: "/articles/" + articleId + "/pick",
+          data: {
+            _method: "PUT",
+            solution_id: commentId
+          }
+        }).success(function() {
+          flash('success', 'Updated ! The page will reload in 3 secs.', 2500);
+          reload(3000);
+        });
+      }
+    });
+  &lt;/script&gt;
+@stop</code></pre>
+<p><img src="./images/42-be-makeup-img-02.png" alt="" /></p>
+<h3>그 외 추가된 장식들</h3>
+<ul>
+<li><a href="22-events.md">22강 - 이벤트</a> 에서 썼던 users.last_login 필드를 살려서, 사용자가 로그인할 때마다 시각을 업데이트하였다. (database/migrations/create_users_table.php, app/Http/Controllers/SessionsController.php, app/Providers/EventServiceProvider.php, app/Listeners/UserEventsHandler.php)</li>
+<li>포럼 상세 보기 페이지가 로드될 때마다 articles.view_count 값을 올려 조회수를 표시하는 기능을 추가하였다. (database/migrations/create_articles_table.php, app/Providers/EventServiceProvider.php, app/Listeners/ViewCountHandler.php, resources/views/articles/partial/article.blade.php)</li>
+</ul>
+<!--@start-->
+<hr />
+<ul>
+<li><a href="../readme.md">목록으로 돌아가기</a></li>
+<li><a href="41-ui-makeup.md">41강 - UI 개선</a></li>
+<li><a href="43-change-note.md">43강 - 변경 사항 알림</a>
+<!--@end--></li>
+</ul>
+
+          <hr/>
+
+          <nav id="pagination">
+  <ul class="pager pager-bottom">
+    <li class="previous ">
+      <a href="/lessons/41-ui-makeup.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          41강 - UI 개선
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/43-change-note.html">
+        <span class="pager-title">
+          43강 - 변경 사항 알...
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr class="divider">
+
+          <div class="comments" style="margin-bottom: 30px;">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//l5lessons.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
+</div>              </article>
+
+
+      <!--Disqus here-->
+    </div>
+  </div>
+
+  <div id="toggler">
+    <a href="#" title="Open Menu">
+      목록 토글
+    </a>
+  </div>
+
+  <footer id="footer">
+  <div>
+    &copy; 2016 &nbsp; <a href="https://github.com/appkr">appkr</a> •
+    Built with <a href="http://jigsaw.tighten.co/">Jigsaw</a> •
+    Hosted by <a href="https://pages.github.com/">Github</a> •
+    <a href="/feed.xml">Rss</a>
+  </div>
+</footer>
+
+<div id="back-to-top">
+  <a href="#" title="Scroll to Top">
+    <i class="material-icons">keyboard_arrow_up</i>
+  </a>
+</div>
+  <script src="/js/all.js"></script>
+</body>
+</html>

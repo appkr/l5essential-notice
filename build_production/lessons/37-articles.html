@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+
+  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="google-site-verification" content=""/>
+  <meta name="naver-site-verification" content=""/>
+
+  <meta name="msapplication-tap-highlight" content="no"/>
+
+  <!-- Facebook Meta -->
+  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:type" content="Website"/>
+  <meta property="og:author" content="appkr (juwonkim@me.com)"/>
+  <meta property="og:image" content=""/>
+
+  <!-- Google+ Meta -->
+  <meta itemprop="name" content="라라벨 5 입문 및 실전">
+  <meta itemprop="description" content="">
+  <meta itemprop="image" content="">
+  <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
+
+  <!-- Twitter Meta -->
+  <meta name="twitter:card" content="summary"/>
+  <meta name="twitter:site" content="@appkrs"/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
+  <meta name="twitter:description" content=""/>
+  <meta name="twitter:image" content=""/>
+  <meta name="twitter:domain" content="example.com">
+
+  <!-- Mobile and Rss -->
+  <link rel="canonical" href="http://l5.appkr.kr/"/>
+
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/earlyaccess/nanumgothic.css"/>
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <title>라라벨 5 입문 및 실전</title>
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body id="#app">
+  <nav class="navbar navbar-fixed-top role="navigation">
+
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">
+        <i class="material-icons">school</i>
+        라라벨 5 입문 및 실전
+      </a>
+    </div>
+  </div>
+</nav>
+  <div class="container">
+    <div class="row">
+      <aside id="sidebar" class="col-md-3">
+        <ul>
+                      <li  index="0" current-index="38">
+              <a href="/lessons/01-welcome.html">1강 - 처음 만나는 라라벨</a>
+            </li>
+                      <li  index="1" current-index="38">
+              <a href="/lessons/02-hello-laravel.html">2강 - 라라벨 5 설치하기</a>
+            </li>
+                      <li  index="2" current-index="38">
+              <a href="/lessons/02-install-on-windows.html">2강 - 라라벨 5 설치하기 (on Windows)</a>
+            </li>
+                      <li  index="3" current-index="38">
+              <a href="/lessons/03-configuration.html">3강 - 글로벌 설정 살펴보기</a>
+            </li>
+                      <li  index="4" current-index="38">
+              <a href="/lessons/04-routing-basics.html">4강 - Routing 기본기</a>
+            </li>
+                      <li  index="5" current-index="38">
+              <a href="/lessons/05-pass-data-to-view.html">5강 - 뷰에 데이터 바인딩하기</a>
+            </li>
+                      <li  index="6" current-index="38">
+              <a href="/lessons/06-blade-101.html">6강 - 블레이드 101</a>
+            </li>
+                      <li  index="7" current-index="38">
+              <a href="/lessons/07-blade-201.html">7강 - 블레이드 201</a>
+            </li>
+                      <li  index="8" current-index="38">
+              <a href="/lessons/08-raw-queries.html">8강 - 날 쿼리 :(</a>
+            </li>
+                      <li  index="9" current-index="38">
+              <a href="/lessons/09-query-builder.html">9강 - 쿼리 빌더</a>
+            </li>
+                      <li  index="10" current-index="38">
+              <a href="/lessons/10-eloquent.html">10강 - 엘로퀀트 ORM</a>
+            </li>
+                      <li  index="11" current-index="38">
+              <a href="/lessons/11-migration.html">11강 - DB 마이그레이션</a>
+            </li>
+                      <li  index="12" current-index="38">
+              <a href="/lessons/12-controller.html">12강 - 컨트롤러</a>
+            </li>
+                      <li  index="13" current-index="38">
+              <a href="/lessons/13-restful-resource-controller.html">13강 - RESTful 리소스 컨트롤러</a>
+            </li>
+                      <li  index="14" current-index="38">
+              <a href="/lessons/14-named-routes.html">14강 - 이름 있는 Route</a>
+            </li>
+                      <li  index="15" current-index="38">
+              <a href="/lessons/15-nested-resources.html">15강 - 중첩된 리소스</a>
+            </li>
+                      <li  index="16" current-index="38">
+              <a href="/lessons/16-authentication.html">16강 - 사용자 인증 기본기</a>
+            </li>
+                      <li  index="17" current-index="38">
+              <a href="/lessons/17-authentication-201.html">17강 - 라라벨에 내장된 사용자 인증</a>
+            </li>
+                      <li  index="18" current-index="38">
+              <a href="/lessons/18-eloquent-relationships.html">18강 - 모델간 관계 맺기</a>
+            </li>
+                      <li  index="19" current-index="38">
+              <a href="/lessons/19-seeder.html">19강 - 데이터 심기</a>
+            </li>
+                      <li  index="20" current-index="38">
+              <a href="/lessons/20-eager-loading.html">20강 - Eager 로딩</a>
+            </li>
+                      <li  index="21" current-index="38">
+              <a href="/lessons/20-1-pagination.html">추가 - 페이징</a>
+            </li>
+                      <li  index="22" current-index="38">
+              <a href="/lessons/21-mail.html">21강 - 메일 보내기</a>
+            </li>
+                      <li  index="23" current-index="38">
+              <a href="/lessons/22-events.html">22강 - 이벤트</a>
+            </li>
+                      <li  index="24" current-index="38">
+              <a href="/lessons/23-validation.html">23강 - 입력 값 유효성 검사</a>
+            </li>
+                      <li  index="25" current-index="38">
+              <a href="/lessons/24-exception-handling.html">24강 - 예외 처리</a>
+            </li>
+                      <li  index="26" current-index="38">
+              <a href="/lessons/25-composer.html">25강 - 컴포저</a>
+            </li>
+                      <li  index="27" current-index="38">
+              <a href="/lessons/26-document-model.html">26강 - Document 모델</a>
+            </li>
+                      <li  index="28" current-index="38">
+              <a href="/lessons/27-document-controller.html">27강 - Document 컨트롤러</a>
+            </li>
+                      <li  index="29" current-index="38">
+              <a href="/lessons/28-cache.html">28강 - Cache</a>
+            </li>
+                      <li  index="30" current-index="38">
+              <a href="/lessons/29-elixir.html">29강 - Elixir, 만병통치약?</a>
+            </li>
+                      <li  index="31" current-index="38">
+              <a href="/lessons/30-final-touch.html">30강 - Debug &amp; Final Touch</a>
+            </li>
+                      <li  index="32" current-index="38">
+              <a href="/lessons/31-forum-features.html">31강 - 포럼 요구사항 기획</a>
+            </li>
+                      <li  index="33" current-index="38">
+              <a href="/lessons/32-login.html">32강 - 사용자 로그인</a>
+            </li>
+                      <li  index="34" current-index="38">
+              <a href="/lessons/33-social-login.html">33강 - 소셜 로그인</a>
+            </li>
+                      <li  index="35" current-index="38">
+              <a href="/lessons/34-role.html">34강 - 사용자 역할</a>
+            </li>
+                      <li  index="36" current-index="38">
+              <a href="/lessons/35-locale.html">35강 - 다국어 지원</a>
+            </li>
+                      <li  index="37" current-index="38">
+              <a href="/lessons/36-models.html">36강 - 마이그레이션과 모델</a>
+            </li>
+                      <li class="active" index="38" current-index="38">
+              <a href="/lessons/37-articles.html">37강 - Article 기능 구현</a>
+            </li>
+                      <li  index="39" current-index="38">
+              <a href="/lessons/38-tags.html">38강 - Tag 기능 구현</a>
+            </li>
+                      <li  index="40" current-index="38">
+              <a href="/lessons/39-attachments.html">39강 - Attachment 기능 구현</a>
+            </li>
+                      <li  index="41" current-index="38">
+              <a href="/lessons/32n33-auth-refactoring.html">32/33 보충 - 인증 리팩토링</a>
+            </li>
+                      <li  index="42" current-index="38">
+              <a href="/lessons/40-comments.html">40강 - Comment 기능 구현</a>
+            </li>
+                      <li  index="43" current-index="38">
+              <a href="/lessons/41-ui-makeup.html">41강 - UI 개선</a>
+            </li>
+                      <li  index="44" current-index="38">
+              <a href="/lessons/42-be-makeup.html">42강 - 서버 사이드 개선</a>
+            </li>
+                      <li  index="45" current-index="38">
+              <a href="/lessons/43-change-note.html">43강 - 변경 사항 알림</a>
+            </li>
+                      <li  index="46" current-index="38">
+              <a href="/lessons/44-api-basic.html">44강 - API 기본기 및 기획</a>
+            </li>
+                      <li  index="47" current-index="38">
+              <a href="/lessons/45-api-big-picture.html">45강 - 기본 구조 잡기</a>
+            </li>
+                      <li  index="48" current-index="38">
+              <a href="/lessons/46-jwt.html">46강 - JWT 를 이용한 인증</a>
+            </li>
+                      <li  index="49" current-index="38">
+              <a href="/lessons/47-dry-refactoring.html">47강 - 중복 제거 리팩토링</a>
+            </li>
+                      <li  index="50" current-index="38">
+              <a href="/lessons/48-all-is-bad.html">48강 - all() is bad</a>
+            </li>
+                      <li  index="51" current-index="38">
+              <a href="/lessons/49-rate-limit.html">49강 - API Rate Limit</a>
+            </li>
+                      <li  index="52" current-index="38">
+              <a href="/lessons/50-id-obfuscation.html">50강 - 리소스 id 난독화</a>
+            </li>
+                      <li  index="53" current-index="38">
+              <a href="/lessons/51-cors.html">51강 - CORS</a>
+            </li>
+                      <li  index="54" current-index="38">
+              <a href="/lessons/52-caching.html">52강 - Caching</a>
+            </li>
+                      <li  index="55" current-index="38">
+              <a href="/lessons/53-partial-response.html">53강 - Partial Response</a>
+            </li>
+                      <li  index="56" current-index="38">
+              <a href="/lessons/54-api-docs.html">54강 - API Documents</a>
+            </li>
+                      <li  index="57" current-index="38">
+              <a href="/lessons/02-install-homestead-osx.html">Homestead 설치 (on Mac)</a>
+            </li>
+                      <li  index="58" current-index="38">
+              <a href="/lessons/02-install-homestead-windows.html">Homestead 설치 (on Windows)</a>
+            </li>
+                      <li  index="59" current-index="38">
+              <a href="/lessons/999-code-release.html">코드 배포</a>
+            </li>
+                  </ul>
+      </aside>
+
+      <article id="article" class="col-md-9">
+                  <nav id="pagination">
+  <ul class="pager pager-top">
+    <li class="previous ">
+      <a href="/lessons/36-models.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          36강 - 마이그레이션...
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/38-tags.html">
+        <span class="pager-title">
+          38강 - Tag 기능 구현
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr/>
+
+          <h1>실전 프로젝트 2 - Forum</h1>
+<h2>37강 - Article 기능 구현</h2>
+<p>이번 강좌를 통해 포럼의 핵심인 Article 기능을 구현할 것이다. 캐싱이나 이벤트 등은 나중에 다듬기로 하고, 컨트롤러와 뷰 위주로 작업을 해 보자. </p>
+<h3>Route 정의 및 컨트롤러 생성</h3>
+<p>RESTful 리소스 컨트롤러를 이용한다.</p>
+<pre><code class="language-php">// app/Http/routes.php
+
+Route::resource('articles', 'ArticlesController');</code></pre>
+<pre><code class="language-bash">$ php artisan make:controller ArticlesController --resource
+$ php artisan route:list</code></pre>
+<p><code>index()</code>와 <code>show()</code> 메소드, 즉 포럼 목록 보기와 개별 포럼 상세 보기만 guest 에게 허용할 것이다. 그리고, 사이드바에 모든 태그 목록을 뿌리기 위해, <a href="35-locale.md">35강 - 다국어 지원</a>에서 했던 것 처럼, <code>$allTags</code> 란 변수를 포럼을 위한 모든 뷰에 공유할 것이다.</p>
+<pre><code class="language-php">class ArticlesController extends Controller
+{
+    public function __construct()
+    {
+        $this-&gt;middleware('auth', ['except' =&gt; ['index', 'show']]);
+        view()-&gt;share('allTags', \App\Tag::with('articles')-&gt;get());
+        parent::__construct();
+    }
+}</code></pre>
+<h3>목록 보기 구현</h3>
+<p>완성된 모양을 먼저 보자.</p>
+<p><img src="./images/37-articles-img-01.png" alt="" /></p>
+<p>resources/views/articles/index.blade.php 는 포럼 목록을 보여주는 뷰이다. 크게 보면 Tag 를 보여주는 왼쪽 영역과, 목록을 보여주는 오른쪽 영역으로 구분된다. 왼쪽 영역에서는 검색 폼 (layouts/partial/search.blade.php) 과 전체 태그 목록(tags/partial/index.blade.php)을 블레이드 문법으로 <code>@include</code> 하고 있다. 오른쪽은 포럼 엔트리들을 표시하는데, 각 엔트리(articles/partial/article.blade.php)는 사용자의 <a href="http://ko.gravatar.com/">Gravatar</a> (users/partial/avatar.blade.php)를 보여주는 영역과 각 Article과 연결된 태그의 목록(tags/partial/list.blade.php)을 보여주는 영역으로 구성되어 있다.</p>
+<p><code>ArticleController::index()</code> 메소드를 작성하자. Eager Loding 으로 'comments', 'author', 'tags' 관계를 포함하고, <code>paginate()</code> 메소드로 한번에 10개의 Article 인스턴스를 불러오도록 하였다.</p>
+<pre><code class="language-php">use App\Article;
+
+class ArticlesController extends Controller
+{
+    public function index()
+    {
+        $articles = Article::with('comments', 'author', 'tags')-&gt;latest()-&gt;paginate(10);
+
+        return view('articles.index', compact('articles'));
+    }
+}</code></pre>
+<p>위에 나열한 뷰들을 작성하자. 레이아웃 관련된 내용들은 각자 입맛에 맞게 작성하도록 하자.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/index.blade.php --&gt;
+
+@extends('layouts.master')
+
+@section('content')
+  &lt;div class="page-header"&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;div class="row container__forum"&gt;
+    &lt;div class="col-md-3 sidebar__forum"&gt;
+      &lt;aside&gt;
+        @include('layouts.partial.search')
+        @include('tags.partial.index')
+      &lt;/aside&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-md-9"&gt;
+      &lt;article&gt;
+        @forelse($articles as $article)
+          @include('articles.partial.article', ['article' =&gt; $article])
+        @empty
+          &lt;p class="text-center text-danger"&gt;{{ trans('errors.not_found_description') }}&lt;/p&gt;
+        @endforelse
+
+        &lt;div class="text-center"&gt;
+          {!! $articles-&gt;appends(Request::except('page'))-&gt;render() !!}
+        &lt;/div&gt;
+      &lt;/article&gt;
+    &lt;/div&gt;
+
+  &lt;/div&gt;
+@stop</code></pre>
+<p>하위 뷰에 데이터를 넘겨 줄 때는, <code>@include('articles.partial.article', ['article' =&gt; $article])</code> 식으로 넘긴다는 것을 익혀 두자. </p>
+<p><code>{{ $articles-&gt;appends(Request::except('page'))-&gt;render() }}</code> 는 나중에 Url 뒤에 여러 개의 쿼리스트링이 붙을 것을 대비해, 미리 <code>appends()</code> 메소드를 이용해서 page 쿼리를 빼고 나머지들은 모두 붙이도록 했다. 가령, GET /articles?solved=0 요청의 페이징 링크는 /articles?solved=0&amp;page=1, /articles?solved=0&amp;page=2 와 같은 식으로 생성된다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/layouts/partial/search.blade.php --&gt;
+
+&lt;form action="#" method="get" role="search"&gt;
+  &lt;input type="text" name="q" value="{{ Input::get('q') }}" class="form-control" placeholder="Search"/&gt;
+&lt;/form&gt;</code></pre>
+<p>풀텍스트 검색 기능은 나중에 구현할 것이므로, 폼만 만들어 놓고 넘어가자.</p>
+<pre><code class="language-html">&lt;!-- resources/views/tags/partial/index.blade.php --&gt;
+
+&lt;p class="lead"&gt;
+  {!! icon('tags') !!} Tags
+&lt;/p&gt;
+
+&lt;ul class="list-unstyled"&gt;
+  @foreach($allTags as $tag)
+    &lt;li class="{{ (Route::current()-&gt;parameter('id') == $tag-&gt;id) ? 'active' : '' }}"&gt;
+      &lt;a href="#"&gt;
+        {{ $tag-&gt;name }}
+        @if ($tagCount = $tag-&gt;articles-&gt;count())
+          &lt;span class="badge badge-default"&gt;{{ $tagCount }}&lt;/span&gt;
+        @endif
+      &lt;/a&gt;
+    &lt;/li&gt;
+  @endforeach
+&lt;/ul&gt;</code></pre>
+<p><code>ArticlesController::__construct()</code> 에서 모든 뷰에 공유한 <code>$allTags</code> 변수를 여기서 이용한다.</p>
+<p>'active' 클래스를 표시하기 위해 삼항 연산자를 이용하였고, <code>Route::current()-&gt;parameter('id')</code> 로 현재 요청의 Route 파라미터를 얻어 왔다. 아직 Route 가 정의되지 않았으므로 이 기능은 동작하지 않는데, 곧 고칠 것이다.</p>
+<p><code>$tagCount = $tag-&gt;articles-&gt;count()</code> 로 각 Tag 에 해당하는 Article 의 갯수를 구하고, 태그 이름 옆에 숫자로 표시하였다. <code>ArticlesController::__construct()</code> 에서 <code>$allTags</code> 변수에서 Eager Loading 을 한 이유가, 여기서 N + 1 쿼리 문제를 피하기 위해서였다.</p>
+<p><strong><code>참고</code></strong> 태그 리스트를 포함한 왼쪽 영역은 여러 뷰에서 사용하므로, <a href="http://laravel.com/docs/views#view-composers">뷰 컴포저</a>로 구성하면 더 깔끔하다. 이 코스 수준을 넘어서는 내용으로 각자 공부해서 적용해 보자. </p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/partial/article.blade.php --&gt;
+
+&lt;div class="media"&gt;
+  @include('users.partial.avatar', ['user' =&gt; $article-&gt;author])
+
+  &lt;div class="media-body"&gt;
+    &lt;h4 class="media-heading"&gt;
+      &lt;a href="{{ route('articles.show', $article-&gt;id) }}"&gt;
+        {{ $article-&gt;title }}
+
+        @if ($commentCount = $article-&gt;comments-&gt;count())
+          &lt;span class="badge pull-right"&gt;
+            {!! icon('comments') !!} {{ $commentCount }}
+          &lt;/span&gt;
+        @endif
+
+        @if ($article-&gt;solution_id)
+          &lt;span class="badge pull-right"&gt;
+            {!! icon('check') !!} {{ trans('forum.solved') }}
+          &lt;/span&gt;
+        @endif
+      &lt;/a&gt;
+    &lt;/h4&gt;
+
+    &lt;p class="text-muted"&gt;
+      &lt;a href="{{ gravatar_profile_url($article-&gt;author-&gt;email) }}" style="margin-right: 1rem;"&gt;
+        {!! icon('user') !!} {{ $article-&gt;author-&gt;name }}
+      &lt;/a&gt;
+      {!! icon('clock') !!} {{ $article-&gt;created_at-&gt;diffForHumans() }}
+    &lt;/p&gt;
+
+    @include('tags.partial.list', ['tags' =&gt; $article-&gt;tags])
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><code>@include('users.partial.avatar', ['user' =&gt; $article-&gt;author])</code> 로, <code>$user</code> 변수를 사용자 사진을 표시할 하위 뷰에 데이터를 넘겨 준다. </p>
+<p><code>$commentCount = $article-&gt;comments-&gt;count()</code> 로,  각 Article에 연결된 Tag 의 갯수를 구하고, Article 제목 옆에 갯수를 표시하였다. </p>
+<p>기본기 강좌에서 'created_at', 'updated_at'은 <code>Carbon\Carbon</code> 인스턴스라고 얘기한바 있다. <code>$article-&gt;created_at-&gt;diffForHumans()</code> 메소드를 쓰면 '6 hours ago' 처럼 Article 생성 시각을 표시할 수 있다.</p>
+<p><code>@include('tags.partial.list', ['tags' =&gt; $article-&gt;tags])</code> 로, 각 Article 인스턴스에 연결된 Tag 의 목록을 넘겨 준 것을 기억해 놓자.</p>
+<pre><code class="language-html">&lt;!-- resources/views/users/partial/avatar.blade.php --&gt;
+
+@if ($user)
+  &lt;a class="pull-left hidden-xs hidden-sm" href="{{ gravatar_profile_url($user-&gt;email) }}"&gt;
+    &lt;img class="media-object img-thumbnail" src="{{ gravatar_url($user-&gt;email, 64) }}" alt="{{ $user-&gt;name }}"&gt;
+  &lt;/a&gt;
+@else
+  &lt;a class="pull-left hidden-xs hidden-sm" href="{{ gravatar_profile_url('john@example.com') }}"&gt;
+    &lt;img class="media-object img-thumbnail" src="{{ gravatar_url('john@example.com', 64) }}" alt="Unknown User"&gt;
+  &lt;/a&gt;
+@endif</code></pre>
+<p><code>gravatar_profile_url()</code>, <code>gravatar_url()</code> Helper를 이용하여, 사용자의 프로파일 주소와 아바타를 가져왔다. 이 Helper들은 다음 섹션에서 구현할 것이다. 로그인한 사용자만 포럼을 남길 수 있게 조치했으므로, <code>$user</code> 변수가 없을 가능성은 없다. <code>$user = null</code> 인 경우를 대비해, 미리 조심해서 나쁠 것은 없다. </p>
+<pre><code class="language-html">&lt;!-- resources/views/tags/partial/list.blade.php --&gt;
+
+@if ($tags-&gt;count())
+  &lt;span class="text-muted"&gt;{!! icon('tags') !!}&lt;/span&gt;
+  &lt;ul class="tags__forum"&gt;
+    @foreach ($tags as $tag)
+      &lt;li class="label label-default"&gt;
+        &lt;a href="#"&gt;{{ $tag-&gt;name }}&lt;/a&gt; &lt;/li&gt;
+    @endforeach
+  &lt;/ul&gt;
+@endif</code></pre>
+<p>'articles/partial/article.blade.php' 에서 넘겨 받은 <code>$tags</code> 변수를 이용하여, 각 Article 에 연결된 Tag 들의 이름을 뿌려준다. 링크 href 속성에 '#'로 표시된 부분은 나중에 다시 업데이트할 것이다.</p>
+<h4>Gravatar Helper</h4>
+<pre><code class="language-php">// app/helpers.php
+
+function gravatar_profile_url($email)
+{
+    return sprintf("//www.gravatar.com/%s", md5($email));
+}
+
+function gravatar_url($email, $size = 72)
+{
+    return sprintf("//www.gravatar.com/avatar/%s?s=%s", md5($email), $size);
+}</code></pre>
+<pre><code class="language-bash">$ php artisan tinker
+&gt;&gt;&gt; gravatar_url('juwonkim@me.com');
+=&gt; "//www.gravatar.com/avatar/6a7346bbad52884566008892003fc6ac?s=72"</code></pre>
+<p>'s' 쿼리는 가져올 아바타 이미지의 사이즈를 의미한다.</p>
+<h3>상세 보기 구현</h3>
+<p>목록에서 Article 엔트리의 제목을 누르면 'GET /articles/{id}' 로 넘어가도록 목록 보기 뷰에서 링크를 걸었다. 이 Route 에 해당하는 <code>ArticlesController::show()</code> 메소드를 작성하자.</p>
+<pre><code class="language-php">class ArticlesController extends Controller
+{
+    public function show($id)
+    {
+        $article = Article::with('comments', 'author', 'tags')-&gt;findOrFail($id);
+
+        return view('articles.show', compact('article'));
+    }
+}</code></pre>
+<p>앞에서 작업을 많이 했기에 'articles/show.blade.php' 는 의외로 간단하다. Article 인스턴스의 'content' 속성값을 뿌리기 위해, 이전에 만든 <code>markdown()</code> Helper를 이용하였다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/show.blade.php --&gt;
+
+@extends('layouts.master')
+
+@section('content')
+  &lt;div class="page-header"&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;div class="row container__forum"&gt;
+    &lt;div class="col-md-3 sidebar__forum"&gt;
+      &lt;aside&gt;
+        @include('layouts.partial.search')
+        @include('tags.partial.index')
+      &lt;/aside&gt;
+    &lt;/div&gt;
+
+    &lt;div class="col-md-9"&gt;
+      &lt;article&gt;
+        @include('articles.partial.article', ['article' =&gt; $article])
+
+        &lt;p&gt;
+          {!! markdown($article-&gt;content) !!}
+        &lt;/p&gt;
+      &lt;/article&gt;
+      ...
+      &lt;article&gt;
+        Comment here
+      &lt;/article&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+@stop</code></pre>
+<p>'Comment here' 라고 된 부분이 보일 것이다. 여기에 댓글 작성 폼과, 그간 작성된 댓글 목록이 표시될 것이다.</p>
+<p><img src="./images/37-articles-img-02.png" alt="" /></p>
+<h3>포럼 쓰기 구현</h3>
+<h4>쓰기 UI 구현</h4>
+<p>새 포럼 글을 쓰는 UI는 목록 보기 뷰나 상단의 네비게이션 메뉴에 위치하면 적절할 것 같다.</p>
+<pre><code class="language-html">&lt;!-- resources/views/articles/index.blade.php --&gt;
+
+&lt;div class="page-header"&gt;
+  &lt;a class="btn btn-primary pull-right" href="{{ route('articles.create') }}"&gt;
+    {!! icon('forum') !!} {{ trans('forum.create') }}
+  &lt;/a&gt;
+  ...
+&lt;/div&gt;
+...</code></pre>
+<h4>쓰기 폼 구현</h4>
+<p>포럼을 쓰기 위한 폼을 만들자.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController
+
+public function create()
+{
+    $article = new Article;
+
+    return view('articles.create', compact('article'));
+}</code></pre>
+<p><code>$article = new Article;</code> 부분은 create 와 edit 뷰에서 폼을 공용으로 사용하기 위한 편법이다. 뒤에 나오는 공용 폼에서 <code>&lt;input type="text" ... value="{{ old('title', $article-&gt;title) }}"/&gt;</code> 에서 edit 뷰에서는 Article 인스턴스가 바인딩되지만, create 뷰에는 바인딩되지 않기 때문에 'Undefined variable: article' 에러가 난다. <code>old()</code> Helper 에서 세션에 <code>$title</code> 값이 있으면 쓰고, 없으면 <code>$article-&gt;title</code>로 폴백하라는 의미이다. </p>
+<pre><code class="language-html">&lt;!-- resources/articles/create.blade.php --&gt;
+
+@extends('layouts.master')
+
+@section('content')
+  &lt;div class="page-header"&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;div class="container__forum"&gt;
+    &lt;form action="{{ route('articles.store') }}" method="POST" role="form" class="form__forum"&gt;
+      {!! csrf_field() !!}
+
+      @include('articles.partial.form')
+
+      &lt;div class="form-group"&gt;
+        &lt;p class="text-center"&gt;
+          &lt;a href="{{ route('articles.create') }}" class="btn btn-default"&gt;
+            {!! icon('reset') !!} Reset
+          &lt;/a&gt;
+          &lt;button type="submit" class="btn btn-primary my-submit"&gt;
+            {!! icon('plane') !!} Post
+          &lt;/button&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+@stop</code></pre>
+<p><code>@include('articles.partial.form')</code> 은 포럼 수정하기에서도 동일하게 사용되는 폼이므로 하위 뷰로 뺐다.</p>
+<pre><code class="language-html">&lt;!-- resources/articles/partial/form.blade.php --&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;label for="title"&gt;{{ trans('forum.title') }}&lt;/label&gt;
+  &lt;input type="text" name="title" id="title" class="form-control" value="{{ old('title', $article-&gt;title) }}"/&gt;
+  {!! $errors-&gt;first('title', '&lt;span class="form-error"&gt;:message&lt;/span&gt;') !!}
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;label for="content"&gt;{{ trans('forum.content') }}&lt;/label&gt;
+  &lt;textarea name="content" class="form-control" rows="10"&gt;{{ old('content', $article-&gt;content) }}&lt;/textarea&gt;
+  {!! $errors-&gt;first('content', '&lt;span class="form-error"&gt;:message&lt;/span&gt;') !!}
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  @include('articles.partial.tagselector')
+&lt;/div&gt;
+
+&lt;div class="form-group"&gt;
+  &lt;div class="checkbox"&gt;
+    &lt;label&gt;
+      &lt;input type="checkbox" name="notification" checked="{{ $article-&gt;notification ?: 'checked' }}"&gt;
+      {{ trans('forum.notification') }}
+    &lt;/label&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p><code>@include('articles.partial.tagselector')</code>, 나중에 포럼을 작성/수정할 때 태그를 선택하는 UI를 추가할 것이다. 여유가 된다면, 'content' 필드에 쓴 내용을 마크다운으로 미리보기하는 기능도 추가해 볼 것이다.</p>
+<p><img src="./images/37-articles-img-03.png" alt="" /></p>
+<h4>저장 로직 구현</h4>
+<p>기본기 강좌의 <a href="23-validation.md">23강 - 입력 값 유효성 검사</a>에서는 다루지 않았는데, 여기서는 <a href="http://laravel.com/docs/validation#form-request-validation">Form Request</a> 를 사용하여 사용자의 입력값 유효성 검사를 할 것이다.</p>
+<pre><code class="language-bash">$ php artisan make:request ArticlesRequest</code></pre>
+<pre><code class="language-php">// app/Http/Requests/ArticlesRequest.php
+
+class ArticlesRequest extends Request
+{
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function rules()
+    {
+        return [
+            'title'   =&gt; 'required',
+            'content' =&gt; 'required',
+        ];
+    }
+}</code></pre>
+<p><code>authorize()</code> 메소드에서 <code>false</code> 를 반환하면, 403 Forbidden 응답이 떨어진다. 우선은 <code>true</code>를 반환하자.</p>
+<p><code>rules()</code> 메소드에서 각 필드별로 검사할 규칙을 정의한다. 여기서는 'required' 만 이용했다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+use App\Http\Requests\ArticlesRequest;
+
+class ArticlesController extends Controller
+{
+    public function store(ArticlesRequest $request)
+    {
+        $article = Article::create($request-&gt;all());
+        flash()-&gt;success(trans('forum.created'));
+
+        return redirect(route('articles.index'));
+    }
+}</code></pre>
+<p><code>store()</code> 메소드에 원래 있던 <code>Illuminate\Http\Request</code> 대신, 방금 만든 <code>App\Http\Requests\ArticlesRequest</code> 을 주입했다. 우리가 만든 Form Request는 원래있던 Request 객체를 상속하고 있고, 거기다 유효성 검사 기능을 추가한 것이다. Form Request 는 미들웨어와 유사한 기능을 하고 있는데, 우리가 만든 Form Request를 통과하지 못하면, <code>store()</code> 메소드는 전혀 실행되지 않는다. </p>
+<p><code>flash()</code> 메소드는 <a href="32-login.md">32강 - 사용자 로그인</a> 에서 설치한 'laracasts/flash' 패키지에 포함된 Helper로, <code>success()</code>, <code>error()</code> 등에 메소드를 체인해서 사용할 수 있다. </p>
+<p>Tag UI 가 준비되면, 유효성 검사 로직과 저장 로직을 다시 손 볼 것이다.</p>
+<h3>포럼 수정 구현</h3>
+<h4>수정 UI 구현</h4>
+<p>수정 및 삭제 UI는 주로 목록 보기 또는 상세 보기에서 접근할 수 있다. 여기서는 상세 보기 뷰에서 구현한다. </p>
+<pre><code class="language-html">&lt;!-- resources/articles/show.blade.php --&gt;
+
+&lt;article&gt;
+...
+  &lt;p class="text-center"&gt;
+    &lt;a href="{{route('articles.edit', $article-&gt;id)}}" class="btn btn-info"&gt;
+      {!! icon('pencil') !!} Edit 
+    &lt;/a&gt;
+  &lt;/p&gt;
+&lt;/article&gt;</code></pre>
+<h4>수정 폼 구현</h4>
+<p>쓰기 폼에서 공용 폼을 만들었기에 한결 간편해 졌다.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function edit($id)
+{
+    $article = Article::findOrFail($id);
+
+    return view('articles.edit', compact('article'));
+}</code></pre>
+<pre><code class="language-html">&lt;!-- resources/articles/edit.blade.php --&gt;
+
+@extends('layouts.master')
+
+@section('content')
+  &lt;div class="page-header"&gt;
+    ...
+  &lt;/div&gt;
+
+  &lt;div class="container__forum"&gt;
+    &lt;form action="{{ route('articles.update', $article-&gt;id) }}" method="POST" role="form" class="form__forum"&gt;
+      {!! csrf_field() !!}
+      {!! method_field('PUT') !!}
+
+      @include('articles.partial.form')
+
+      &lt;div class="form-group"&gt;
+        &lt;p class="text-center"&gt;
+          &lt;a href="{{ route('articles.edit', $article-&gt;id) }}" class="btn btn-default"&gt;
+            {!! icon('reset') !!} Reset
+          &lt;/a&gt;
+          &lt;button type="submit" class="btn btn-primary"&gt;
+            {!! icon('plane') !!} Edit
+          &lt;/button&gt;
+        &lt;/p&gt;
+      &lt;/div&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+@stop</code></pre>
+<p><code>{!! method_field('PUT') !!}</code> 는 <a href="13-restful-resource-controller.md">13강 - RESTful 리소스 컨트롤러</a> 에서 설명한 메소드 오버라이드를 위한 숨김 필드를 생성해 주는 Helper 로, <code>&lt;input type="hidden" name="_method" value="PUT"&gt;</code> 태그를 생성한다.</p>
+<h4>수정 로직 구현</h4>
+<p>포럼 쓰기에서 만든 FormRequest를 그대로 사용하자.</p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function update(ArticlesRequest $request, $id)
+{
+    $article = Article::findOrFail($id);
+    $article-&gt;update($request-&gt;except('_token', '_method'));
+    flash()-&gt;success(trans('forum.updated'));
+
+    return redirect(route('articles.index'));
+}</code></pre>
+<p><img src="./images/37-articles-img-04.png" alt="" /></p>
+<h3>포럼 삭제 구현</h3>
+<h4>삭제 UI 구현</h4>
+<p>일반적으로 삭제는 Ajax 요청을 이용하는데, 여기서는 전통적인 폼 요청을 통해서 하도록 하자.</p>
+<pre><code class="language-html">&lt;!-- resources/articles/show.blade.php --&gt;
+
+...
+  &lt;div class="text-center"&gt;
+    &lt;form action="{{ route('articles.destroy', $article-&gt;id) }}" method="post"&gt;
+      {!! csrf_field() !!}
+      {!! method_field('DELETE') !!}
+      &lt;button type="submit" class="btn btn-danger"&gt;
+        {!! icon('delete') !!} Delete
+      &lt;/button&gt;
+      &lt;a href="{{route('articles.edit', $article-&gt;id)}}" class="btn btn-info"&gt;
+        {!! icon('pencil') !!} Edit
+      &lt;/a&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/article&gt;</code></pre>
+<h4>삭제 로직 구현</h4>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function destroy($id)
+{
+    Article::findOrFail($id)-&gt;delete();
+    flash()-&gt;success(trans('forum.deleted'));
+
+    return redirect(route('articles.index'));
+}</code></pre>
+<h3>접근 제어 (Authorization)</h3>
+<p>상세 보기에서 관리자이거나 사용자 자신이 작성한 포럼만 수정하거나 삭제할 수 있도록 할 것이다. <a href="34-role.md">34강 - 사용자 역할</a> 에서 설치한 'bican/roles' 패키지가 밥값을 할 차례이다... 라고 생각하고, 이용하려고 했으나 뭔가 여의치 않다. </p>
+<p>해서 User 와 Article 모델에 Helper 메소드를 만들었다. 어쨌든, 뷰에서 접근을 제한하여 버튼 UI 자체가 표시되지 않게 하는 게 우선이고...</p>
+<pre><code class="language-php">// app/User.php
+
+public function isAdmin()
+{
+    return $this-&gt;roles()-&gt;whereSlug('admin')-&gt;exists();
+}</code></pre>
+<pre><code class="language-php">// app/Article.php
+
+public function isAuthor()
+{
+    return $this-&gt;author-&gt;id == auth()-&gt;user()-&gt;id;
+}</code></pre>
+<pre><code class="language-html">&lt;!-- resources/articles/show.blade.php --&gt;
+
+  @if (auth()-&gt;user()-&gt;isAdmin() or $article-&gt;isAuthor())
+  &lt;div class="text-center"&gt;
+    &lt;form ...&gt;
+      &lt;button ...&gt;Delete&lt;/button&gt;
+    &lt;/form&gt;
+    &lt;a ...&gt;Edit&lt;/a&gt;
+  @endif
+&lt;/article&gt;</code></pre>
+<p>다음은 CURL 코맨드 등을 이용하여 직접 Route 에 접근하는 것을 막아야 한다. 이를 위해 Route 미들웨어를 만들고, app/Http/Kernel.php 에 Route 미들웨어라고 등록할 것이다.</p>
+<pre><code class="language-bash">$ php artisan make:middleware CanAccessArticle</code></pre>
+<pre><code class="language-php">// app/Http/Middleware/CanAccessArticle.php
+
+class CanAccessArticle
+{
+    public function handle($request, Closure $next)
+    {
+        $user = $request-&gt;user();
+        $articleId = $request-&gt;route('articles');
+
+        if (! \App\Article::whereId($articleId)-&gt;whereAuthorId($user-&gt;id)-&gt;exists() and ! $user-&gt;isAdmin()) {
+            flash()-&gt;error(trans('errors.forbidden') . ' : ' . trans('errors.forbidden_description'));
+
+            return back();
+        }
+
+        return $next($request);
+    }
+}</code></pre>
+<p><code>Illuminate\Http\Request</code> 인스턴스에서는 <code>user()</code> 메소드를 사용할 수 있으며, <code>auth()-&gt;user()</code> 와 동일한 결과를 얻을 수있다. 로그인한 사용자 id와 Route 파라미터로 넘겨 받은 Article id로 Article 모델을 검색하여 레코드가 있으면, 작성자이므로 통과시켜 주는 식이다.</p>
+<p><strong><code>참고</code></strong> 미들웨어에서 Route를 통해 사용자로부터 넘겨 받은 파라미터를 이용할 수 있다. <a href="http://laravel.com/docs/middleware#middleware-parameters">미들웨어 파라미터</a>를 잘 이용하면, Article 모델 뿐 아니라 여러 모델에 적용할 수 있는 미들웨어를 만들수 있을 것이다.</p>
+<pre><code class="language-php">// app/Http/Kernel.php
+
+protected $routeMiddleware = [
+    // Other Route Middlewares ...
+    'accessible' =&gt; \App\Http\Middleware\CanAccessArticle::class,
+];</code></pre>
+<p>컨트롤러에서 미들웨어를 등록하자. 미들웨어는 순차적으로 실행되므로 반드시 'auth' 미들웨어 다음에 정의되어야 한다. 이유는 사용자 로그인을 먼저 걸러주고 난 이후에, 이 사용자가 해당 Route와 컨트롤러 메소드에 접근할 수 있는 지 체크하는 식이다. </p>
+<pre><code class="language-php">// app/Http/Controllers/ArticlesController.php
+
+public function __construct()
+{
+    ...
+    $this-&gt;middleware('accessible', ['except' =&gt; ['index', 'show', 'create']]);
+}</code></pre>
+<h4>테스트</h4>
+<p>artisan CLI의 tinker 코맨드로 사용자의 비밀번호를 수정하자.</p>
+<pre><code class="language-bash">$ php artisan tinker
+&gt;&gt;&gt; $user = App\User::find(2);
+&gt;&gt;&gt; $user-&gt;password = bcrypt('password');
+&gt;&gt;&gt; $user-&gt;save();</code></pre>
+<p>1번과 2번 사용자로 번갈아 로그인한 후 구현한 내용이 잘 동작하는 지 확인해 보자.</p>
+<!--@start-->
+<hr />
+<ul>
+<li><a href="../readme.md">목록으로 돌아가기</a></li>
+<li><a href="36-models.md">36강 - 마이그레이션과 모델</a></li>
+<li><a href="38-tags.md">38강 - Tag 기능 구현</a>
+<!--@end--></li>
+</ul>
+
+          <hr/>
+
+          <nav id="pagination">
+  <ul class="pager pager-bottom">
+    <li class="previous ">
+      <a href="/lessons/36-models.html">
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_left</i>
+        </span>
+        <span class="pager-title">
+          36강 - 마이그레이션...
+        </span>
+      </a>
+    </li>
+    <li class="next ">
+      <a href="/lessons/38-tags.html">
+        <span class="pager-title">
+          38강 - Tag 기능 구현
+        </span>
+        <span class="pager-title-sm">
+          <i class="material-icons">keyboard_arrow_right</i>
+        </span>
+      </a>
+    </li>
+  </ul>
+</nav>
+          <hr class="divider">
+
+          <div class="comments" style="margin-bottom: 30px;">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+    (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//l5lessons.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+  <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
+</div>              </article>
+
+
+      <!--Disqus here-->
+    </div>
+  </div>
+
+  <div id="toggler">
+    <a href="#" title="Open Menu">
+      목록 토글
+    </a>
+  </div>
+
+  <footer id="footer">
+  <div>
+    &copy; 2016 &nbsp; <a href="https://github.com/appkr">appkr</a> •
+    Built with <a href="http://jigsaw.tighten.co/">Jigsaw</a> •
+    Hosted by <a href="https://pages.github.com/">Github</a> •
+    <a href="/feed.xml">Rss</a>
+  </div>
+</footer>
+
+<div id="back-to-top">
+  <a href="#" title="Scroll to Top">
+    <i class="material-icons">keyboard_arrow_up</i>
+  </a>
+</div>
+  <script src="/js/all.js"></script>
+</body>
+</html>
