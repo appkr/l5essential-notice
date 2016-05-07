@@ -65,8 +65,10 @@
 
       if (imgObjects.length) {
         imgObjects.each(function() {
-          var that = $(this);
-          that.closest('a').attr('data-toggle', 'lightbox').attr('data-title', that.attr('alt'));
+          var img = $(this);
+          img.wrap(function() {
+            return '<a href="' + img.attr('src') + '" data-toggle="lightbox" data-title="' + (img.attr('alt') || 'Untitled Image') + '"></a>';
+          });
         });
 
         bodyContainer.delegate('*[data-toggle="lightbox"]', 'click', function(e) {
