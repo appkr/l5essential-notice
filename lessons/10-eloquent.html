@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="객체관계모델(ORM)은 웹 프레임워크의 정수다. 데이터를 클래스 컨텍스트에서 어떻게 다루고, 데이터베이스와 어떻게 상호 작용하는 지 배워 본다. MVC에서 M에 해당한다. "/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 10강 - 엘로퀀트 ORM"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 10강 - 엘로퀀트 ORM">
+  <meta itemprop="description" content="객체관계모델(ORM)은 웹 프레임워크의 정수다. 데이터를 클래스 컨텍스트에서 어떻게 다루고, 데이터베이스와 어떻게 상호 작용하는 지 배워 본다. MVC에서 M에 해당한다. ">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 10강 - 엘로퀀트 ORM"/>
+  <meta name="twitter:description" content="객체관계모델(ORM)은 웹 프레임워크의 정수다. 데이터를 클래스 컨텍스트에서 어떻게 다루고, 데이터베이스와 어떻게 상호 작용하는 지 배워 본다. MVC에서 M에 해당한다. "/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 10강 - 엘로퀀트 ORM</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/09-query-builder.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>10강 - 엘로퀀트 ORM</h1>
+            <h1>10강 - 엘로퀀트 ORM</h1>
 <p>엘로퀀트는 라라벨의 ORM (Object Relational Mapper, Active Record Pattern 의 구현체)이다. 데이터베이스는 테이블간 관계를 가지고 있다. 데이터베이스를 추상화한 모델 클래스 간에 관계를 맺어 주는 구현체를 일반적으로 ORM이라 칭한다. 뿐만 아니라 라라벨에서는 config/database.php에 의해 설정된 DB Driver와 ORM 사용으로 인해 데이터베이스와 어플리케이션 간에 디커플링 효과도 얻게 된다. 어플리케이션 코드 수정 한 줄 없이 mySQL을 SQLite로 바꿀 수 있다는 의미이다.</p>
 <h2>모델</h2>
 <p>라라벨이 MVC 프레임웍인데 우리가 이제까지 본 것은 V(뷰) 뿐이었다. 드디어 M에 해당하는 모델을 볼 차례이다. authors 라는 테이블을 생성하자.</p>
@@ -362,9 +363,9 @@ class Author extends Model
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/09-query-builder.html">
@@ -387,9 +388,11 @@ class Author extends Model
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -403,10 +406,8 @@ class Author extends Model
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

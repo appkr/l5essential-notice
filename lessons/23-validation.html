@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="사용자는 개발자가 아니다. 개발자가 원하는 대로 데이터를 입력한다는 보장은 없다. 어쩌면 해커일 수도 있다. 잘못된 데이터로 부터 서비스를 보호하는 방법이 필요하고, 서비스(데이터)에 변경이 발생하는 사용자의 요청은 무조건 유효성 검사를 해야 한다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 23강 - 입력 값 유효성 검사"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 23강 - 입력 값 유효성 검사">
+  <meta itemprop="description" content="사용자는 개발자가 아니다. 개발자가 원하는 대로 데이터를 입력한다는 보장은 없다. 어쩌면 해커일 수도 있다. 잘못된 데이터로 부터 서비스를 보호하는 방법이 필요하고, 서비스(데이터)에 변경이 발생하는 사용자의 요청은 무조건 유효성 검사를 해야 한다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 23강 - 입력 값 유효성 검사"/>
+  <meta name="twitter:description" content="사용자는 개발자가 아니다. 개발자가 원하는 대로 데이터를 입력한다는 보장은 없다. 어쩌면 해커일 수도 있다. 잘못된 데이터로 부터 서비스를 보호하는 방법이 필요하고, 서비스(데이터)에 변경이 발생하는 사용자의 요청은 무조건 유효성 검사를 해야 한다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 23강 - 입력 값 유효성 검사</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/22-events.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>23강 - 입력 값 유효성 검사</h1>
+            <h1>23강 - 입력 값 유효성 검사</h1>
 <p>항상 듣는 말이다. <strong>&quot;사용자가 입력한 값은 절대 신뢰하지 마라.&quot;</strong> 유효성 검사는 사용자의 악의적인 해킹 시도 또는 잘못된 데이터 입력으로 부터 서비스를 보호하는 기본 중에 기본이므로 굉장히 중요하다. 프론트엔드에서 자바스크립트로 한번 걸렀다고 해도, HTTP 클라이언트를 통해서 직접 요청할 수 있으므로 백엔드에서도 반드시 유효성 검사를 수행해야 한다.</p>
 <h2>라라벨이 지원하는 유효성 검사 규칙</h2>
 <p>이 예제에서 사용하는 <code>required</code>, <code>min</code> 뿐 아니라, <code>string</code>, <code>confirmed</code>, <code>exists</code>, <code>required_if</code>, 등등등 굉장히 많다. <a href="http://laravel.com/docs/validation#available-validation-rules">공식 문서</a>를 참고하자.</p>
@@ -377,9 +378,9 @@ class PostsController extends Controller
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/22-events.html">
@@ -402,9 +403,11 @@ class PostsController extends Controller
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -418,10 +421,8 @@ class PostsController extends Controller
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

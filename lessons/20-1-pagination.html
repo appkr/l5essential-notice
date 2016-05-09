@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="이거로딩과 더불어 서비스를 보호하고 사용자에게 쾌적한 서비스를 제공하기 위해 페이징을 필수다. 쓰지도 않을 10만 레코드를 응답할 필요 없다. 10개씩 1만 묶음으로 나누면 된다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 추가 - 페이징"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 추가 - 페이징">
+  <meta itemprop="description" content="이거로딩과 더불어 서비스를 보호하고 사용자에게 쾌적한 서비스를 제공하기 위해 페이징을 필수다. 쓰지도 않을 10만 레코드를 응답할 필요 없다. 10개씩 1만 묶음으로 나누면 된다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 추가 - 페이징"/>
+  <meta name="twitter:description" content="이거로딩과 더불어 서비스를 보호하고 사용자에게 쾌적한 서비스를 제공하기 위해 페이징을 필수다. 쓰지도 않을 10만 레코드를 응답할 필요 없다. 10개씩 1만 묶음으로 나누면 된다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 추가 - 페이징</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/20-eager-loading.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>페이징</h1>
+            <h1>페이징</h1>
 <p>모델에 데이터가 많아지면 한번에 모든 레코드를 표시할 수가 없게 된다. 이때 필요한 것이 페이징이다.</p>
 <h2>페이징된 콜렉션 만들기</h2>
 <p>app/Http/routes.php 에 아래와 같이 Route를 써 보자. 모델에 대한 쿼리 끝에 <code>get()</code> 이나 <code>find()</code> 대신, <code>paginate()</code> 메소드를 체인하면 페이징을 위한 준비 완료! 인자는 한번에 반환할 Collection 갯수를 넣는다. 이 예제에서는 10개로 했다.</p>
@@ -306,9 +307,9 @@
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/20-eager-loading.html">
@@ -331,9 +332,11 @@
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -347,10 +350,8 @@
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

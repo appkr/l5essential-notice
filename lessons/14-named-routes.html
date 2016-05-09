@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="하드코드는 항상 나쁘다. 라우트에 이름을 붙여 가독성과, 유지 보수성을 향상하는 방법을 배운다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 14강 - 이름 있는 Route"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 14강 - 이름 있는 Route">
+  <meta itemprop="description" content="하드코드는 항상 나쁘다. 라우트에 이름을 붙여 가독성과, 유지 보수성을 향상하는 방법을 배운다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 14강 - 이름 있는 Route"/>
+  <meta name="twitter:description" content="하드코드는 항상 나쁘다. 라우트에 이름을 붙여 가독성과, 유지 보수성을 향상하는 방법을 배운다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 14강 - 이름 있는 Route</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/13-restful-resource-controller.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>14강 - 이름 있는 Route</h1>
+            <h1>14강 - 이름 있는 Route</h1>
 <p>Named Routes는 여러모로 유용하다. 컨트롤러에서 <code>redirect(string $to)</code> Helper Function 으로 이동할 Url을 만들거나, 뷰 안에서 다른 Url로 이동하는 링크를 만들 때, 하드코드로 Url을 써 놓는 것 보다 여러 모로 관리상 편리하다. 가령, posts 라는 Url 엔트포인트를 어느날 갑자기 articles 로 모두 바꾸어야 한다고 생각해 보라. 모든 컨트롤러와 뷰를 찾아 다니면서 Url을 변경하는 것이 얼마나 귀찮을까?</p>
 <h2>Route 에 이름을 주자</h2>
 <p>app/Http/routes.php 에서 공부해 보자. Route 메소드의 두번째 인자로 배열을 사용하고, 배열의 키로 'as'를 사용하여 라우트의 이름을 지정한다. 컨트롤러로의 연결은 'uses' 키를 사용한다.</p>
@@ -322,9 +323,9 @@
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/13-restful-resource-controller.html">
@@ -347,9 +348,11 @@
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -363,10 +366,8 @@
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 
