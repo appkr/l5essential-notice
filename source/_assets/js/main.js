@@ -10,6 +10,7 @@
     };
 
     this.registerGlobals();
+    this.rewriteArticle();
     this.addListeners();
     this.activateMaterialDesign();
     this.activateDisqus();
@@ -17,6 +18,8 @@
     /* Activate syntax highlight.
      This will affect code blocks right after the page renders */
     hljs.initHighlightingOnLoad();
+
+    this.updateMetaImage();
   };
 
   App.registerGlobals = function() {
@@ -75,18 +78,6 @@
           e.preventDefault();
           $(this).ekkoLightbox();
         });
-
-        // While we are dealing with image objects
-        // Let's update SEO meta fields
-        var firstImageUrl = imgObjects.first().attr('src');
-
-        firstImageUrl = (firstImageUrl.indexOf('//') !== -1)
-          ? firstImageUrl
-          : 'http://' + window.location.host + ((firstImageUrl.startsWith('/')) ? '' : '/') +firstImageUrl;
-
-        $('meta[property="og:image"]').attr('content', firstImageUrl);
-        $('meta[itemprop="image"]').attr('content', firstImageUrl);
-        $('meta[name="twitter:image"]').attr('content', firstImageUrl);
       }
     });
 
@@ -120,6 +111,40 @@
     dqsScript.async = true;
     dqsScript.src = '//appkr.disqus.com/count.js';
     (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dqsScript);
+  };
+
+  App.rewriteArticle = function() {
+    //var pagingRegex = /<!--\s?@start\s?-->[\w\W\d\D]+<!--\s?@end\s?-->[\n]?<\/li>[\n]?<\/ul>/gi;
+    var pagingRegex = /<!--\s?@start\s?-->[\w\W\d\D]+<!--\s?@end\s?-->/gi;
+    var linkRegex = /lessons\/([0-9n]{2,5}-[\pL-\pN_-]+)\.md/gi;
+    var articleContent = $('#article').html();
+
+    if (pagingRegex.test(articleContent)) {
+      articleContent = articleContent.replace(pagingRegex, '');
+    }
+
+    if (linkRegex.test(articleContent)) {
+      articleContent = articleContent.replace(linkRegex, '$1.html');
+    }
+
+    //$('#article').html(articleContent);
+  };
+
+  App.updateMetaImage = function() {
+    var imgObjects = $('#article').find('img');
+
+    if (imgObjects.length) {
+      var firstImageUrl = imgObjects.first().attr('src'),
+        firstImageUrl = firstImageUrl.startsWith('.') ? firstImageUrl.replace('.', '') : firstImageUrl;
+
+      firstImageUrl = (firstImageUrl.indexOf('//') !== -1)
+        ? firstImageUrl
+        : 'http://' + window.location.host + ((firstImageUrl.startsWith('/')) ? '/lessons' : '/lessons/') +firstImageUrl;
+
+      $('meta[property="og:image"]').attr('content', firstImageUrl);
+      $('meta[itemprop="image"]').attr('content', firstImageUrl);
+      $('meta[name="twitter:image"]').attr('content', firstImageUrl);
+    }
   };
 
   /* Helpers */

@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="AWS EC2 인스턴스를 만들고, 그간 개발한 코드를 배포하는 방법을 설명한다. 라라벨이 제공하는 엔보이 원격 작업 자동화 도구를 이용해 배포 툴을 만드는 방법도 설명한다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 코드 배포"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 코드 배포">
+  <meta itemprop="description" content="AWS EC2 인스턴스를 만들고, 그간 개발한 코드를 배포하는 방법을 설명한다. 라라벨이 제공하는 엔보이 원격 작업 자동화 도구를 이용해 배포 툴을 만드는 방법도 설명한다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 코드 배포"/>
+  <meta name="twitter:description" content="AWS EC2 인스턴스를 만들고, 그간 개발한 코드를 배포하는 방법을 설명한다. 라라벨이 제공하는 엔보이 원격 작업 자동화 도구를 이용해 배포 툴을 만드는 방법도 설명한다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 코드 배포</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/02-install-homestead-windows.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>코드 배포</h1>
+            <h1>코드 배포</h1>
 <p>웹 프로그래머의 삶이 여유롭지는 않다. 왜냐하면, 사용자와 접하게 되는 UI/UX 요소인 CSS/JS 부터 시작해서, 서버 설치 및 운영까지 다 할 줄 알아야 될 뿐 아니라, 하루가 다르게 쏟아져 나오는 새로운 기술과 툴들을 익혀야 하기 때문이다. 그 뿐인가, 개발에 필요한 디자인 패턴이며, 컴퓨터 네트워크의 동작 원리 등등 배워야 할 것이 산적해 있기도 하다. 운이 좋아 FE (==Front End), BE (==Back End), SE (==Systems Engineer) 로 업무가 모두 나뉘어 있는 큰 회사에 소속되어 있다면 좋을텐데... 모두가 그런 행운아의 주인공일 수는 없일 일. 참고로, FE, BE, SE 의 영역을 모두 아우르는 프로그래머를 <a href="https://speakerdeck.com/driesvints/the-laravel-ecosystem?slide=17">풀 스택 프로그래머</a> 라고 한다.</p>
 <p>꼭 웹 프로그래머가 아니더라도, 프로그래머의 삶이 좋은 이유가 있긴 하다. &quot;배움에 소홀하지 않다면&quot;, 동네 내과 병원의 백발이 성성한 70대 원장님 처럼, 계속 프로그래밍으로 생계를 유지할 수도 있기 때문이다. <strong>&quot;배움에 소홀하지 않다면...&quot;</strong></p>
 <p>서론이 길었다. 이번 강좌에서는 코드 배포하는 것을 배울 것이다. 아무리 훌륭한 웹 어플리케이션 또는 서비스를 만들었다고 해도 서버에 올라가서 사용자들에게 서비스가 되지 않는다면, 만들지 않은 서비스 또는 존재하지 않는 서비스나 마찬가지이다. 즉, 코드 배포는 (웹) 프로그래머로서 꼭 알아야 할 주제라고 강조하고 싶다.</p>
@@ -536,9 +537,9 @@ $ envoy run release</code></pre>
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/02-install-homestead-windows.html">
@@ -561,9 +562,11 @@ $ envoy run release</code></pre>
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -577,10 +580,8 @@ $ envoy run release</code></pre>
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

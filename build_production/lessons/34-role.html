@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="... 실수다. 라라벨 5.1에서 사용자의 접근 권한을 제어하기 위해 RBAC(Role-based Access Control)을 구현하려 했으나, 뒤에서 별로 쓰이지 않는다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 34강 - 사용자 역할"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 34강 - 사용자 역할">
+  <meta itemprop="description" content="... 실수다. 라라벨 5.1에서 사용자의 접근 권한을 제어하기 위해 RBAC(Role-based Access Control)을 구현하려 했으나, 뒤에서 별로 쓰이지 않는다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 34강 - 사용자 역할"/>
+  <meta name="twitter:description" content="... 실수다. 라라벨 5.1에서 사용자의 접근 권한을 제어하기 위해 RBAC(Role-based Access Control)을 구현하려 했으나, 뒤에서 별로 쓰이지 않는다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 34강 - 사용자 역할</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/33-social-login.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>실전 프로젝트 2 - Forum</h1>
+            <h1>실전 프로젝트 2 - Forum</h1>
 <h2>34강 - 사용자 역할</h2>
 <p>역할 기능을 이용해 RBAC (== Role Based Access Control)을 구현할 것이다. 앞에서 배운 'auth' 미들웨어가 할 수 있는 것은 특정 엔드포인트에 들어가려면 로그인(== Authentication, 인증)이 필요하다 정도라면, 접근 제어 또는 권한 부여(== Authorization 또는 Access Control)는 특정 엔드포인트는 admin 역할을 가진 사용자만 들어갈 수 있도록 할 수 있다. 우리 프로젝트를 예로 들면, 포럼 글은 로그인한 사용자 누구나 볼 수 있지만, 수정이나 삭제는 admin 또는 소유자만 할 수 있도록 하는 것이 권한 부여의 기능이다. </p>
 <h3>패키지 설치</h3>
@@ -369,9 +370,9 @@ class User extends Model implements AuthenticatableContract,
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/33-social-login.html">
@@ -394,9 +395,11 @@ class User extends Model implements AuthenticatableContract,
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -410,10 +413,8 @@ class User extends Model implements AuthenticatableContract,
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

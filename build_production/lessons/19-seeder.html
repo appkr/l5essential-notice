@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="서비스를 개발하려면 데이터가 필요하다. 가짜 사용자, 가짜 블로그 포스트 등등. 이런 데이터를 쉽게 만드는 방법을 배운다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 19강 - 데이터 심기"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 19강 - 데이터 심기">
+  <meta itemprop="description" content="서비스를 개발하려면 데이터가 필요하다. 가짜 사용자, 가짜 블로그 포스트 등등. 이런 데이터를 쉽게 만드는 방법을 배운다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 19강 - 데이터 심기"/>
+  <meta name="twitter:description" content="서비스를 개발하려면 데이터가 필요하다. 가짜 사용자, 가짜 블로그 포스트 등등. 이런 데이터를 쉽게 만드는 방법을 배운다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 19강 - 데이터 심기</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/18-eloquent-relationships.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>19강 - 데이터 심기</h1>
+            <h1>19강 - 데이터 심기</h1>
 <p>앞에서 마이그레이션으로 테이블을 만들어 보았다. 만들어진 테이블에 테스트 데이터 또는 기본 데이터를 심는 과정을 씨딩(Seeding)이라 한다. 라라벨 5부터 Seeding을 효율적으로 하기 위한 Factory 기능이 제공된다. Factory는 데이터베이스 Seeding 뿐만 아니라, 테스트 클래스에서 필요한 데이터를 Stubbing하는데도 유용하게 사용할 수 있다.</p>
 <h2>Model Factory</h2>
 <p>database/factories/ModelFactory.php 를 살펴보자. <code>App\User</code> 모델에 대한 Factory는 기본 제공되는 것을 알 수 있다. <code>App\Post</code> 모델에 대한 Factory를 정의해 보자.</p>
@@ -376,9 +377,9 @@ class PostsTableSeeder extends Seeder
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/18-eloquent-relationships.html">
@@ -401,9 +402,11 @@ class PostsTableSeeder extends Seeder
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -417,10 +420,8 @@ class PostsTableSeeder extends Seeder
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

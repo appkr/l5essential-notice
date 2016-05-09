@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="마크다운 파일은 거의 변하지 않는다. 사용자가 매번 요청할 때마다, 파일 시스템을 읽고, 마크다운을 HTML로 컴파일하는 것은 별로 똑똑하지 않다. HTML로 컴파일된 결과를 어디에 저장해 놓고, 일정 시간 내에 들어온 사용자의 요청에 대응하는 방법을 배운다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 28강 - Cache"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 28강 - Cache">
+  <meta itemprop="description" content="마크다운 파일은 거의 변하지 않는다. 사용자가 매번 요청할 때마다, 파일 시스템을 읽고, 마크다운을 HTML로 컴파일하는 것은 별로 똑똑하지 않다. HTML로 컴파일된 결과를 어디에 저장해 놓고, 일정 시간 내에 들어온 사용자의 요청에 대응하는 방법을 배운다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 28강 - Cache"/>
+  <meta name="twitter:description" content="마크다운 파일은 거의 변하지 않는다. 사용자가 매번 요청할 때마다, 파일 시스템을 읽고, 마크다운을 HTML로 컴파일하는 것은 별로 똑똑하지 않다. HTML로 컴파일된 결과를 어디에 저장해 놓고, 일정 시간 내에 들어온 사용자의 요청에 대응하는 방법을 배운다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 28강 - Cache</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/27-document-controller.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>실전 프로젝트 1 - Markdown Viewer</h1>
+            <h1>실전 프로젝트 1 - Markdown Viewer</h1>
 <h2>28강 - Cache</h2>
 <p>우리가 사용한 마크다운 파일은 자주 변경되지 않는다. 즉, 매번 사용자가 요청할 때 마다 모델에서 요청한 파일을 읽어 들이고, ParsedownExtra 클래스 인스턴스를 만들어서 <code>text()</code> 메소드를 호출한다는 것은 서버의 CPU 및 메모리 자원뿐만아니라 사용자의 시간을 낭비하는 일이다. 이럴 때 필요한 것이 서버측 캐시이다. 캐시는 HTTP 요청에 대한 응답을 파일 또는 메모리에 저장해 두었다가 두번째 요청부터는 저장소에서 바로 꺼내어 주는 기능이다. 데이터베이스 드라이버와 마찬가지로 라라벨 캐시도 다양한 드라이버를 지원한다.</p>
 <h3>캐시 설정</h3>
@@ -332,9 +333,9 @@ $ memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/27-document-controller.html">
@@ -357,9 +358,11 @@ $ memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -373,10 +376,8 @@ $ memcached -u memcached -d -m 30 -l 127.0.0.1 -p 11211
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="부분 응답은 캐싱과 마찬가지로 역시 &quot;돈&quot;에 관련된 이슈다. API 클라이언트가 필요한 필드만 요청하도록 하는 것이다. 쓰지도 않을 데이터를 전부 요청하고 응답하는 것 보다, 꼭 필요한 필드만 골라서 주고 받는 것이 훨씬 더 현명한다. 이 기능을 개발한다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 53강 - Partial Response"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 53강 - Partial Response">
+  <meta itemprop="description" content="부분 응답은 캐싱과 마찬가지로 역시 &quot;돈&quot;에 관련된 이슈다. API 클라이언트가 필요한 필드만 요청하도록 하는 것이다. 쓰지도 않을 데이터를 전부 요청하고 응답하는 것 보다, 꼭 필요한 필드만 골라서 주고 받는 것이 훨씬 더 현명한다. 이 기능을 개발한다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 53강 - Partial Response"/>
+  <meta name="twitter:description" content="부분 응답은 캐싱과 마찬가지로 역시 &quot;돈&quot;에 관련된 이슈다. API 클라이언트가 필요한 필드만 요청하도록 하는 것이다. 쓰지도 않을 데이터를 전부 요청하고 응답하는 것 보다, 꼭 필요한 필드만 골라서 주고 받는 것이 훨씬 더 현명한다. 이 기능을 개발한다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 53강 - Partial Response</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/52-caching.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>실전 프로젝트 3 - RESTful API</h1>
+            <h1>실전 프로젝트 3 - RESTful API</h1>
 <h2>53강 - Partial Response</h2>
 <p><a href="lessons/52-caching.md">52강 - Caching</a> 에서 네트워크 대역폭을 줄이는 일이, 대형 서비스로 발전할 때 얼마나 중요한 일인지 배워 보았다. Partial Response 는 API 클라이언트가 필요한 필드만 골라서 받을 수 있도록 하는 장치로서 역시 동일한 이유로 API 서버에서 제공되면 좋은 기능이다.</p>
 <p>지난 강의에서 캐싱을 구현했는데, Production 환경에서 꼭 필요한 기능이지만, Development 환경에서는 수정한 결과가 캐싱때문에 바로 표시되지 않는 문제가 있다. 이번 강좌에서도 응답을 수정하고, 그 결과를 봐야 할 때 매번 <code>$ php artisan cache:clear</code> 명령으로 캐시를 버리는 개발 프로세스는 아주 비 효율적이다. 개발 환경에서 캐시를 끌 수 있도록 하는 Refactoring 을 먼저 하고, Partial Response 를 살펴 보도록 하자.</p>
@@ -619,9 +620,9 @@ return [
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/52-caching.html">
@@ -644,9 +645,11 @@ return [
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -660,10 +663,8 @@ return [
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 

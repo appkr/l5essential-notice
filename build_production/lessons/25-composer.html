@@ -5,31 +5,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
-  <meta name="description" content="라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다."/>
+  <meta name="description" content="모던 PHP의 핵심이다. 컴포저는 PHP의 표준 의존성 관리자다. 외부 컴포넌트를 가져와 문제점을 빠르게 해결하고, 서비스의 기능을 개선하기 위해 컴포저를 사용한다. 그리고 PSR-4 네임스페이스와 오토로딩 기능을 덤이다."/>
   <meta name="google-site-verification" content=""/>
   <meta name="naver-site-verification" content=""/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
   <!-- Facebook Meta -->
-  <meta property="og:title" content="라라벨 5 입문 및 실전"/>
+  <meta property="og:title" content="라라벨 5 입문 및 실전 / 25강 - 컴포저"/>
   <meta property="og:type" content="Website"/>
   <meta property="og:author" content="appkr (juwonkim@me.com)"/>
   <meta property="og:image" content=""/>
 
   <!-- Google+ Meta -->
-  <meta itemprop="name" content="라라벨 5 입문 및 실전">
-  <meta itemprop="description" content="">
+  <meta itemprop="name" content="라라벨 5 입문 및 실전 / 25강 - 컴포저">
+  <meta itemprop="description" content="모던 PHP의 핵심이다. 컴포저는 PHP의 표준 의존성 관리자다. 외부 컴포넌트를 가져와 문제점을 빠르게 해결하고, 서비스의 기능을 개선하기 위해 컴포저를 사용한다. 그리고 PSR-4 네임스페이스와 오토로딩 기능을 덤이다.">
   <meta itemprop="image" content="">
   <meta itemprop="author" content="appkr (juwonkim@me.com)"/>
 
   <!-- Twitter Meta -->
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:site" content="@appkrs"/>
-  <meta name="twitter:title" content="라라벨 5 입문 및 실전"/>
-  <meta name="twitter:description" content=""/>
+  <meta name="twitter:title" content="라라벨 5 입문 및 실전 / 25강 - 컴포저"/>
+  <meta name="twitter:description" content="모던 PHP의 핵심이다. 컴포저는 PHP의 표준 의존성 관리자다. 외부 컴포넌트를 가져와 문제점을 빠르게 해결하고, 서비스의 기능을 개선하기 위해 컴포저를 사용한다. 그리고 PSR-4 네임스페이스와 오토로딩 기능을 덤이다."/>
   <meta name="twitter:image" content=""/>
-  <meta name="twitter:domain" content="example.com">
+  <meta name="twitter:domain" content="http://l5.appkr.kr/">
 
   <!-- Mobile and Rss -->
   <link rel="canonical" href="http://l5.appkr.kr/"/>
@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/css/main.css">
 
-  <title>라라벨 5 입문 및 실전</title>
+  <title>라라벨 5 입문 및 실전 / 25강 - 컴포저</title>
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!--[if lt IE 9]>
@@ -246,8 +246,9 @@
                   </ul>
       </aside>
 
-      <article id="article" class="col-md-9">
-                  <nav id="pagination">
+      <div class="col-md-9">
+        <article id="article">
+                      <nav id="pagination">
   <ul class="pager pager-top">
     <li class="previous ">
       <a href="/lessons/24-exception-handling.html">
@@ -271,9 +272,9 @@
     </li>
   </ul>
 </nav>
-          <hr/>
+            <hr/>
 
-          <h1>25강 - 컴포저</h1>
+            <h1>25강 - 컴포저</h1>
 <p>2강에서 라라벨 5 처음 설치할 때 Composer를 설치했을 것이다. 그땐 무엇인지 모르고 마냥 썼을 수도 있지만, 이제 그 정체를 조금만 핥아 보자. Composer는 php의 패키지 매니저이다. 패키지 레지스트리는 <a href="https://packagist.org/">패키지스트</a>라 불린다. Java에 Maven, Python에 PyPi, Ruby에 Gem, Node에 Npm이 있다면, php엔 Composer가 있다. 라라벨도 버전 4로 넘어가면서 Composer를 본격적을 도입하고, 코어 프레임웍과 외부 패키지로 분리했다.</p>
 <p>작은 서비스를 개발할 때는 패키지를 관리하는 일이 필요없지만, 서비스가 커질 수록 패키지 관리의 필요성은 급증한다. 급기야 <strong>패키지를 관리하지 않아서, 개발자들이 패키지에 의해서 관리 당해지는 웃지 못할 사태</strong>가 벌어질 수 있다. 패키지 매니저를 쓸 때 개인적으로 좋은 점을 정리해 봤다.</p>
 <ul>
@@ -345,9 +346,9 @@ Token (hidden):</p>
 <!--@end--></li>
 </ul>
 
-          <hr/>
+            <hr/>
 
-          <nav id="pagination">
+            <nav id="pagination">
   <ul class="pager pager-bottom">
     <li class="previous ">
       <a href="/lessons/24-exception-handling.html">
@@ -370,9 +371,11 @@ Token (hidden):</p>
       </a>
     </li>
   </ul>
-</nav>
-          <hr class="divider">
+</nav>                  </article>
 
+        <hr class="divider">
+
+        <div id="comment">
           <div class="comments" style="margin-bottom: 30px;">
   <div id="disqus_thread"></div>
   <script type="text/javascript">
@@ -386,10 +389,8 @@ Token (hidden):</p>
   <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
 
   <!--script id="dsq-count-scr" src="//l5lessons.disqus.com/count.js" async></script-->
-</div>              </article>
-
-
-      <!--Disqus here-->
+</div>        </div>
+      </div>
     </div>
   </div>
 
