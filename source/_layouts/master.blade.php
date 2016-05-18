@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
 
   <meta name="description" content="{{ (! is_null($current_index)) ? $lessons[$current_index]['description'] : $site_description }}"/>
-  <meta name="google-site-verification" content=""/>
-  <meta name="naver-site-verification" content=""/>
+  <meta name="google-site-verification" content="ToXKBimREnz49pDNot4b-N9ZJgYcKXPPsHsjhg4Zzuc"/>
+  <meta name="naver-site-verification" content="7cebcc8e5493169f5401870d9ce57f48d18491cd"/>
 
   <meta name="msapplication-tap-highlight" content="no"/>
 
