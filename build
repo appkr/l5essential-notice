@@ -9,8 +9,8 @@ rm source/lessons/INDEX.md
 
 vendor/bin/jigsaw build --pretty=false --env="$ENV"
 
-[ -d build_local ] && cp CNAME build_local/
-[ -d build_production ] && cp CNAME build_production/
+[ -d build_local ] && cp CNAME 404.html build_local/
+[ -d build_production ] && cp CNAME 404.html build_production/
 
 [ -f build_local/feed.xml.html ] && mv build_local/feed.xml.html build_local/feed.xml
 [ -f build_production/feed.xml.html ] && mv build_production/feed.xml.html build_production/feed.xml
