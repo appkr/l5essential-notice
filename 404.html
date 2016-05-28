@@ -27,11 +27,11 @@
   <script>
     var url = window.location.href;
 
-    if (/([0-9]{2,5}-[\pL-\pN\._-]+)\.md/gi.test(url)) {
+    if (/([0-9]{2,5}-[a-zA-Z0-9-_\.]+)\.md/gi.test(url)) {
       url = url.replace('.md', '.html');
       document.querySelector('link[rel="canonical"]').setAttribute('href', url);
       document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', '0; '+url);
-      window.location.href = url;
+//      window.location.href = url;
     }
   </script>
 </body>
