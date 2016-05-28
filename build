@@ -1,6 +1,7 @@
 #! /usr/bin/env bash
 
-[[ ! -z "$1" ]] && ENV="local"
+ENV="local"
+[[ ! -z "$1" ]] && ENV="production"
 
 rm -rf source/lessons
 cp -R $HOME/workspace/myProject/lessons ./source/
