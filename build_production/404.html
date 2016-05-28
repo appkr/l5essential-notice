@@ -31,7 +31,11 @@
       url = url.replace('.md', '.html');
       document.querySelector('link[rel="canonical"]').setAttribute('href', url);
       document.querySelector('meta[http-equiv="refresh"]').setAttribute('content', '0; '+url);
-//      window.location.href = url;
+      window.location.href = url;
+    }
+
+    if (/readme\.md/gi.test(url)) {
+      window.location.href = '/';
     }
   </script>
 </body>
