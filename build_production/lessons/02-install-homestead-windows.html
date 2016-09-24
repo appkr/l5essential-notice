@@ -293,7 +293,7 @@ the provider you will be working with.
 
 Enter your choice: 1</code></pre>
 <h2>Homestead 프로젝트 설치</h2>
-<p><code>git</code> 명령을 쓸 수 없는 경우, <a href="https://github.com/laravel/homestead"><a href="https://github.com/laravel/homestead">https://github.com/laravel/homestead</a></a> 를 방문해서 zip 파일을 다운로드 한 후, 적절한 위치에 압축을 해제한다. </p>
+<p><code>git</code> 명령을 쓸 수 없는 경우, <a href="https://github.com/laravel/homestead"><a href="https://github.com/laravel/homestead">https://github.com/laravel/homestead</a></a> 를 방문해서 zip 파일을 다운로드 한 후, 적절한 위치에 압축을 해제한다.</p>
 <pre><code class="language-bash"># Git Bash
 $ cd ~ &amp;&amp; git clone https://github.com/laravel/homestead.git Homestead</code></pre>
 <h2>Homestead 설정</h2>
@@ -313,9 +313,9 @@ memory: 2048
 cpus: 1
 provider: virtualbox # Virtual Machine Provider
 
-# SSH 로그인에 사용할 public key. 이 키 값은 homestead VM 의 
+# SSH 로그인에 사용할 public key. 이 키 값은 homestead VM 의
 # /home/vagrant/.ssh/authorized_keys 에 자동으로 추가된다.
-authorize: ~/.ssh/id_rsa.pub 
+authorize: ~/.ssh/id_rsa.pub
 
 keys:
     - ~/.ssh/id_rsa # SSH 로그인에 사용할 private key
@@ -336,8 +336,8 @@ sites:
       to: /home/vagrant/example/public</code></pre>
 <h2>Host 파일 설정</h2>
 <p>Homestead 설정에서 myproject.dev 란 도메인을 이용했다. 이런 도메인은 존재하지 않는다. 운영체제의 Host 파일을 수정할 것이다. 운영체제에 포함된 'hosts' 파일은 DNS 로 myproject.dev 에 대한 ip 주소 Resolution 요청이 나가기 전에 요청을 낚아 채서, 'hosts' 파일 안에서 찾는다. 사용자가 요청한 도메인에 해당하는 레코드가 있으면 지정된 ip 주소로 이동할 것이다.</p>
-<p>텍스트 편집기나 코드 에디터로 <code>%WINDOR%\System32\drivers\etc\hosts</code> 파일을 열어 아래 레코드를 추가한다.</p>
-<pre><code class="language-bash"># %WINDOR%\System32\drivers\etc\hosts
+<p>텍스트 편집기나 코드 에디터로 <code>%WINDIR%\System32\drivers\etc\hosts</code> 파일을 열어 아래 레코드를 추가한다.</p>
+<pre><code class="language-bash"># %WINDIR%\System32\drivers\etc\hosts
 
 192.168.10.10    myproject.dev</code></pre>
 <p><img src="./images/02-install-homestead-windows-img-01.png" alt="" /></p>
@@ -351,7 +351,7 @@ $ ssh-keygen -t rsa
 # Enter passphrase (empty for no passphrase): &lt;Enter&gt;
 # Enter same passphrase again: &lt;Enter&gt;</code></pre>
 <h2>Homestead 실행</h2>
-<p>실행해 보자. 처음 실행할 때는 시간이 좀 걸리는데, 이유는 앞에서 Homestead.yaml 에 설정한, ip 주소, public key 복사, 공유 폴더 설정 등을 하기 때문이다. 처음 실행할 때는 방화벽 관련 보안 경고가 뜰 수 있는 데 &quot;허용&quot; 해 주자. </p>
+<p>실행해 보자. 처음 실행할 때는 시간이 좀 걸리는데, 이유는 앞에서 Homestead.yaml 에 설정한, ip 주소, public key 복사, 공유 폴더 설정 등을 하기 때문이다. 처음 실행할 때는 방화벽 관련 보안 경고가 뜰 수 있는 데 &quot;허용&quot; 해 주자.</p>
 <pre><code class="language-bash"># Git Bash
 $ cd ~/Homestead &amp;&amp; vagrant up
 
@@ -375,7 +375,7 @@ vagrant@homestead:~$ ifconfig | grep 192.168.10.10
 
 vagrant@homestead:~$ cat ~/.ssh/authorized_keys
 # ssh-rsa AAAAB3NzaC1...TpJ5HH suchc@homepc</code></pre>
-<p><strong><code>참고</code></strong> ssh 를 이용해 직접 접속하려면 <code>$ ssh vagrant@myproject.dev -D 2222</code>. </p>
+<p><strong><code>참고</code></strong> ssh 를 이용해 직접 접속하려면 <code>$ ssh vagrant@myproject.dev -D 2222</code>.</p>
 <h2>데이터베이스 접속</h2>
 <p>Host <code>127.0.0.1</code>, Port <code>33060</code>, Username <code>homestead</code>, Password <code>secret</code> 로 접속한다. PostgresSQL 의 경우 Port <code>54320</code> 으로 접속한다. 필자는 <a href="https://code.google.com/p/sqlyog/wiki/Downloads">SQLyog</a> 클라이언트를 이용하였다.</p>
 <p><img src="./images/02-install-homestead-windows-img-02.png" alt="" /></p>
