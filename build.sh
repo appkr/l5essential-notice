@@ -1,10 +1,10 @@
-#! /usr/bin/env bash
+#!/usr/bin/env bash
 
 ENV="local"
-[[ ! -z "$1" ]] && ENV="production"
+[[ -z "$1" ]] || ENV="production"
 
 rm -rf source/lessons
-cp -R $HOME/workspace/myProject/lessons ./source/
+cp -R $HOME/workspace/l5essential/lessons ./source/
 rm source/lessons/INDEX.md
 
 vendor/bin/jigsaw build --pretty=false --env="$ENV"

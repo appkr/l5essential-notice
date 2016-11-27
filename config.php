@@ -3,7 +3,7 @@
 return [
     'production' => false,
     'site_title' => '라라벨 5 입문 및 실전',
-    'site_description' => '라라벨 5.2를 기준으로 이 강좌를 더 정제해서 쓴 종이 책이 곧 나온다. 그럼에도 불구하고, 이 강좌를 통해 라라벨의 기능 대부분을 익힐 수 있다.',
+    'site_description' => '',
     'current_url' => '/',
     'current_index' => null,
     'lessons' => [
