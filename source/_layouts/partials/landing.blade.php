@@ -4,11 +4,7 @@
 
 <h2>종이책 출간 안내</h2>
 
-<p>이 온라인 강좌는 2016년 11월에 종이책으로 출간됐다. 큰 흐름은 이 온라인 강좌와 비슷하지만, 종이책은 라라벨 5.3을 기준으로 설명하며, 프로들의 도움을 받아 문장을 정제하고 설명이 부족한 부분을 보충했다. PHP 문법이나 객체 지향의 개념을 포함했다거나, 보우어(bower)대신 npm을 사용하는 등 최신 개발 트렌드에 맞도록 일부 내용은 개정했다. </p>
-
-<p><img src="http://cfile2.uf.tistory.com/image/261326505829771C18CBB0" alt="라라벨로 배우는 실전 PHP 웹 프로그래밍(김주원, 제이펍)"></p>
-
-<p><a href="http://www.yes24.com/24/Goods/33320248">yes24</a>, <a href="http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&amp;mallGb=KOR&amp;barcode=9791185890623">교보문고</a></p>
+<p><a href="http://blog.appkr.kr/work-n-play/laravel-paper-book-published/">http://blog.appkr.kr/work-n-play/laravel-paper-book-published/</a></p>
 
 <h2>이 강좌를 처음 시작하시는 분들께</h2>
 
