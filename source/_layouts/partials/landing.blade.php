@@ -77,7 +77,9 @@
   <li>감수 - <a href="https://www.facebook.com/jongwoong.lee.71">이종웅 님</a></li>
   <li><a href="https://github.com/appkr/l5essential/graphs/contributors">Pull Request 를 통한 기여자 분들</a></li>
   <li><a href="https://github.com/lesstif">정광섭님</a> - 라이브 데모 서버</li>
+  <li><a href="https://www.jetbrains.com/">JetBrains</a>에서 phpStorm IDE를 지원해 주셨습니다.</li>
 </ul>
+<img src="https://github.com/appkr/l5essential/raw/master/icon_PhpStorm.png" alt="" width="128" style="width: 128px;">
 <p>&quot;모두 모두 감사합니다.&quot;</p>
 
 <h2>라이센스</h2>
